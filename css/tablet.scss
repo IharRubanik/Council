@@ -1,0 +1,604 @@
+/* roboto-condensed-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/roboto-condensed-v25-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-condensed-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/roboto-condensed-v25-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-condensed-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/roboto-condensed-v25-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  @font-face {
+    font-family: "Bebas Neue";
+    src: local("Bebas Neue Bold"), local("BebasNeueBold"),
+      url("../fonts/bebasneuebold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @mixin h2 {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 220px;
+    line-height: 220px;
+    text-align: center;
+    color: #ffffff;
+  }
+  @mixin h3 {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 120px;
+    color: #ffffff;
+  }
+  @mixin h4 {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 78px;
+    line-height: 78px;
+    color: #ffffff;
+  }
+  @mixin text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 34px;
+    color: #ffffff;
+  }
+  @mixin text-mini {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    color: #ea5f1b;
+    display: block;
+    padding: 6px 0 2px 0;
+    border-top: 2px solid #ea5f1b;
+    border-bottom: 2px solid #ea5f1b;
+    width: min-content;
+  }
+  @mixin social {
+    width: 34px;
+    height: 34px;
+    background: #ffffff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @mixin button {
+    width: auto;
+    height: auto;
+    max-height: 34px;
+    padding: 8px 19px;
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #141313;
+    transition: 0.25s ease-out background, 0.25s ease-out color;
+    border: none;
+    overflow: hidden;
+    span {
+      transition: 0.25s ease-out transform;
+      &:last-child {
+        transform: translateY(100%);
+      }
+      &:first-child {
+        transform: translateY(50%);
+      }
+    }
+    &:hover {
+      background: #ea5f1b;
+      color: #ffffff;
+      span {
+        &:last-child {
+          transform: translateY(-50%);
+        }
+        transform: translateY(-100%);
+      }
+    }
+  }
+  
+  body {
+    background: #141313;
+    overflow: overlay;
+  }
+  ._container {
+    width: 1800px;
+    margin: 0 auto;
+  }
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .header {
+    padding: 38px 0 0 0;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    right: 60px;
+    .header_container {
+      width: max-content;
+      .header-logo {
+        position: fixed;
+        top: 38px;
+        left: 60px;
+        a {
+          text-decoration: none;
+          outline: 0;
+          .logo {
+            width: 86px;
+            height: auto;
+          }
+        }
+      }
+      .navigation-container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .connect-wallet {
+          cursor: pointer;
+          @include button();
+        }
+        .navigation {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 18px;
+          text-transform: uppercase;
+          color: #ffffff;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          padding: 0 0 0 18px;
+          li {
+            .navigation-item {
+              text-decoration: none;
+              outline: 0;
+              display: flex;
+              align-items: center;
+              position: relative;
+              transition: 0.25s ease-out color;
+              color: #ffffff;
+  
+              &:hover {
+                color: #ea5f1b;
+              }
+              &.active {
+                color: #ea5f1b;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  right: 0;
+                  width: 19px;
+                  height: 2px;
+                  background: #ea5f1b;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    transition: 0.25s ease-out opacity;
+    .main-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .main_container {
+      padding: 38px 0 0 0;
+  
+      .main-wrapper {
+        width: 1800px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        .social {
+          margin: 40px 0 0 0;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          a {
+            text-decoration: none;
+            outline: 0;
+            transition: 0.25s ease-out background;
+            svg {
+              width: 18px;
+              height: auto;
+              path {
+                transition: 0.25s ease-out fill;
+              }
+            }
+            &:hover {
+              background: #ea5f1b;
+              svg {
+                path {
+                  fill: #ffffff;
+                }
+              }
+            }
+            @include social();
+          }
+        }
+        .main-title {
+          margin: 50px 0 0 0;
+          font-family: "Bebas Neue";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 280px;
+          line-height: 280px;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+        .title-line {
+          margin: 0 0 0 375px;
+          transform: translateY(-200%);
+          width: 696px;
+        }
+        .main-subtitle {
+          width: 895px;
+          position: relative;
+          margin: 20px 0 0 auto;
+          p {
+            &:first-child {
+              text-align: end;
+              color: #ea5f1b;
+            }
+            @include text();
+          }
+          &::before {
+            content: "";
+            display: block;
+            clip-path: polygon(0 0, 0 100%, 100% 0);
+            width: 18px;
+            height: 18px;
+            background: #ea5f1b;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+    &.opacity {
+      opacity: 0;
+    }
+  }
+  .manifesto {
+    margin: 100vh 0 0 0;
+    position: relative;
+    width: 100%;
+    height: 1150vh;
+    overflow-y: visible;
+  
+    .bg-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1150vh;
+      z-index: 3;
+      .bg-container2 {
+        position: sticky;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        .manifesto-bg {
+          width: 100%;
+          // height: 100%;
+          object-fit: cover;
+          object-position: bottom;
+          transition: 0.25s ease-out filter, 0.25s ease-out opacity;
+          &.blend {
+            filter: brightness(0.5);
+          }
+          &.opacity {
+            opacity: 0;
+          }
+        }
+      }
+    }
+    .manifesto-title {
+      padding: 125vh 0 0 0;
+      position: relative;
+      height: 100vh;
+      z-index: 3;
+      @include h2();
+    }
+    .manifesto-text {
+      position: relative;
+      height: 100vh;
+      z-index: 3;
+      h3 {
+        @include h3();
+      }
+      span {
+        @include text-mini();
+      }
+      p {
+        margin: 30px 0 0 303px;
+        @include text();
+      }
+    }
+    .text1 {
+      padding: 0 0 0 60px;
+      p {
+        width: 1194px;
+      }
+    }
+    .text2 {
+      padding: 0 0 0 667px;
+      p {
+        width: 586px;
+      }
+    }
+    .text3 {
+      padding: 0 0 0 363px;
+      p {
+        width: 890px;
+      }
+    }
+  }
+  .roadmap {
+    margin: -50vh 0 0 0;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    gap: 70px;
+    padding: 0 0 0 60px;
+    // &.opacity {
+    //   background: #141313;
+    //   mix-blend-mode: lighten;
+    // }
+    .sparks-container {
+      position: absolute;
+      left: -21px;
+      top: 372px;
+      background: #141313;
+      opacity: 0;
+      z-index: -1;
+      // transition: 1s ease-out opacity;
+      .sparks {
+        width: 1200px;
+        height: auto;
+        opacity: 0.3;
+        mix-blend-mode: lighten;
+      }
+    }
+    .left-block {
+      padding: 90px 0 0 0;
+      position: sticky;
+      top: 0;
+      height: calc(100vh - 180px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 60px;
+      .roadmap-title {
+        margin: 0 0 auto 0;
+        @include h2();
+      }
+      .social {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        a {
+          text-decoration: none;
+          outline: 0;
+          transition: 0.25s ease-out background;
+          svg {
+            width: 18px;
+            height: auto;
+            path {
+              transition: 0.25s ease-out fill;
+            }
+          }
+          &:hover {
+            background: #ea5f1b;
+            svg {
+              path {
+                fill: #ffffff;
+              }
+            }
+          }
+          @include social();
+        }
+      }
+      .reserved {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        color: #ffffff;
+      }
+    }
+  
+    .roadmap_item-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 120px 0 110px 0;
+  
+      .roadmap_item {
+        width: 780px;
+        height: 456px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        &:first-child {
+          cursor: auto;
+          .circle {
+            display: none;
+          }
+          .date {
+            margin: auto 0 0 0;
+          }
+        }
+        &:hover {
+          .item-bg {
+            transform: scale(1.2);
+          }
+          .circle {
+            background: #ea5f1b;
+            svg {
+              path {
+                stroke: #ffffff;
+              }
+            }
+          }
+        }
+        .item-bg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -1;
+          transition: 0.25s ease-out transform;
+        }
+        .circle {
+          margin: auto 0 0 0;
+          height: 65px;
+          width: 65px;
+          border-radius: 100%;
+          text-decoration: none;
+          background: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.25s ease-out background;
+          svg {
+            width: 23px;
+            height: auto;
+            path {
+              transition: 0.25s ease-out stroke;
+            }
+          }
+          &:hover {
+            background: #ea5f1b;
+            svg {
+              path {
+                stroke: #ffffff;
+              }
+            }
+          }
+        }
+        .status {
+          position: relative;
+          padding: 0 9px;
+          width: min-content;
+          margin: 0 0 0 auto;
+          min-width: 67px;
+          img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          span {
+            position: relative;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            color: #ffffff;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            svg {
+              width: 24px;
+              height: auto;
+            }
+          }
+        }
+        .date {
+          margin: 40px 0 0 0;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 28px;
+          color: #ffffff;
+          padding: 0 10px;
+          border: 1px solid #ffffff;
+          border-radius: 100px;
+          width: max-content;
+        }
+        .item-title {
+          margin: 15px 0 0 0;
+          @include h4();
+        }
+  
+        &.blocked {
+          cursor: auto;
+          .status {
+            img {
+              filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+                saturate(0%) hue-rotate(245deg) brightness(108%) contrast(104%);
+            }
+          }
+          .circle {
+            display: none;
+          }
+          .date {
+            margin: auto 0 0 0;
+          }
+        }
+      }
+    }
+  }
+  

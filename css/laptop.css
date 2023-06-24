@@ -1,0 +1,585 @@
+/* roboto-condensed-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto-condensed-v25-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-condensed-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-condensed-v25-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-condensed-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-condensed-v25-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../fonts/bebasneuebold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  background: #141313;
+  overflow: overlay;
+}
+
+._container {
+  width: 93.75vw;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  padding: 1.979vw 0 0 0;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  right: 3.125vw;
+}
+.header .header_container {
+  width: -moz-max-content;
+  width: max-content;
+}
+.header .header_container .header-logo {
+  position: fixed;
+  top: 1.979vw;
+  left: 3.125vw;
+}
+.header .header_container .header-logo a {
+  text-decoration: none;
+  outline: 0;
+}
+.header .header_container .header-logo a .logo {
+  width: 4.479vw;
+  height: auto;
+}
+.header .header_container .navigation-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2.604vw;
+}
+.header .header_container .navigation-container .connect-wallet {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  max-height: 1.771vw;
+  padding: 0.417vw 0.99vw;
+  background: #ffffff;
+  border-radius: 0.208vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.781vw;
+  line-height: 0.938vw;
+  text-transform: uppercase;
+  color: #141313;
+  transition: 0.25s ease-out background, 0.25s ease-out color;
+  border: none;
+  overflow: hidden;
+}
+.header .header_container .navigation-container .connect-wallet span {
+  transition: 0.25s ease-out transform;
+}
+.header .header_container .navigation-container .connect-wallet span:last-child {
+  transform: translateY(100%);
+}
+.header .header_container .navigation-container .connect-wallet span:first-child {
+  transform: translateY(50%);
+}
+.header .header_container .navigation-container .connect-wallet:hover {
+  background: #ea5f1b;
+  color: #ffffff;
+}
+.header .header_container .navigation-container .connect-wallet:hover span {
+  transform: translateY(-100%);
+}
+.header .header_container .navigation-container .connect-wallet:hover span:last-child {
+  transform: translateY(-50%);
+}
+.header .header_container .navigation-container .navigation {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.781vw;
+  line-height: 0.938vw;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.302vw;
+  padding: 0 0 0 0.938vw;
+}
+.header .header_container .navigation-container .navigation li .navigation-item {
+  text-decoration: none;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: 0.25s ease-out color;
+  color: #ffffff;
+}
+.header .header_container .navigation-container .navigation li .navigation-item:hover {
+  color: #ea5f1b;
+}
+.header .header_container .navigation-container .navigation li .navigation-item.active {
+  color: #ea5f1b;
+}
+.header .header_container .navigation-container .navigation li .navigation-item.active::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0.99vw;
+  height: 0.104vw;
+  background: #ea5f1b;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  transition: 0.25s ease-out opacity;
+}
+.main .main-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+.main .main_container {
+  padding: 1.979vw 0 0 0;
+}
+.main .main_container .main-wrapper {
+  width: 93.75vw;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main .main_container .main-wrapper .social {
+  margin: 2.083vw 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625vw;
+}
+.main .main_container .main-wrapper .social a {
+  text-decoration: none;
+  outline: 0;
+  transition: 0.25s ease-out background;
+  width: 1.771vw;
+  height: 1.771vw;
+  background: #ffffff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .main_container .main-wrapper .social a svg {
+  width: 0.938vw;
+  height: auto;
+}
+.main .main_container .main-wrapper .social a svg path {
+  transition: 0.25s ease-out fill;
+}
+.main .main_container .main-wrapper .social a:hover {
+  background: #ea5f1b;
+}
+.main .main_container .main-wrapper .social a:hover svg path {
+  fill: #ffffff;
+}
+.main .main_container .main-wrapper .main-title {
+  margin: 2.604vw 0 0 0;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14.583vw;
+  line-height: 14.583vw;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.main .main_container .main-wrapper .title-line {
+  margin: 0 0 0 19.531vw;
+  transform: translateY(-200%);
+  width: 36.25vw;
+}
+.main .main_container .main-wrapper .main-subtitle {
+  width: 46.615vw;
+  position: relative;
+  margin: 1.042vw 0 0 auto;
+}
+.main .main_container .main-wrapper .main-subtitle p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25vw;
+  line-height: 1.771vw;
+  color: #ffffff;
+}
+.main .main_container .main-wrapper .main-subtitle p:first-child {
+  text-align: end;
+  color: #ea5f1b;
+}
+.main .main_container .main-wrapper .main-subtitle::before {
+  content: "";
+  display: block;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
+          clip-path: polygon(0 0, 0 100%, 100% 0);
+  width: 0.938vw;
+  height: 0.938vw;
+  background: #ea5f1b;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main.opacity {
+  opacity: 0;
+}
+
+.manifesto {
+  margin: 100vh 0 0 0;
+  position: relative;
+  width: 100%;
+  height: 1150vh;
+  overflow-y: visible;
+}
+.manifesto .bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1150vh;
+  z-index: 3;
+}
+.manifesto .bg-container .bg-container2 {
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.manifesto .bg-container .bg-container2 .manifesto-bg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  transition: 0.25s ease-out filter, 0.25s ease-out opacity;
+}
+.manifesto .bg-container .bg-container2 .manifesto-bg.blend {
+  filter: brightness(0.5);
+}
+.manifesto .bg-container .bg-container2 .manifesto-bg.opacity {
+  opacity: 0;
+}
+.manifesto .manifesto-title {
+  padding: 125vh 0 0 0;
+  position: relative;
+  height: 100vh;
+  z-index: 3;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11.458vw;
+  line-height: 11.458vw;
+  text-align: center;
+  color: #ffffff;
+}
+.manifesto .manifesto-text {
+  position: relative;
+  height: 100vh;
+  z-index: 3;
+}
+.manifesto .manifesto-text h3 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.25vw;
+  line-height: 6.25vw;
+  color: #ffffff;
+}
+.manifesto .manifesto-text span {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.458vw;
+  line-height: 1.458vw;
+  color: #ea5f1b;
+  display: block;
+  padding: 0.313vw 0 0.104vw 0;
+  border-top: 0.104vw solid #ea5f1b;
+  border-bottom: 0.104vw solid #ea5f1b;
+  width: -moz-min-content;
+  width: min-content;
+}
+.manifesto .manifesto-text p {
+  margin: 1.563vw 0 0 15.781vw;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25vw;
+  line-height: 1.771vw;
+  color: #ffffff;
+}
+.manifesto .text1 {
+  padding: 0 0 0 3.125vw;
+}
+.manifesto .text1 p {
+  width: 62.188vw;
+}
+.manifesto .text2 {
+  padding: 0 0 0 34.74vw;
+}
+.manifesto .text2 p {
+  width: 30.521vw;
+}
+.manifesto .text3 {
+  padding: 0 0 0 18.906vw;
+}
+.manifesto .text3 p {
+  width: 46.354vw;
+}
+
+.roadmap {
+  margin: -50vh 0 0 0;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  gap: 3.646vw;
+  padding: 0 0 0 3.125vw;
+}
+.roadmap .sparks-container {
+  position: absolute;
+  left: -1.094vw;
+  top: 19.375vw;
+  background: #141313;
+  opacity: 0;
+  z-index: -1;
+}
+.roadmap .sparks-container .sparks {
+  width: 62.5vw;
+  height: auto;
+  opacity: 0.3;
+  mix-blend-mode: lighten;
+}
+.roadmap .left-block {
+  padding: 4.688vw 0 0 0;
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 9.375vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 3.125vw;
+}
+.roadmap .left-block .roadmap-title {
+  margin: 0 0 auto 0;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11.458vw;
+  line-height: 11.458vw;
+  text-align: center;
+  color: #ffffff;
+}
+.roadmap .left-block .social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625vw;
+}
+.roadmap .left-block .social a {
+  text-decoration: none;
+  outline: 0;
+  transition: 0.25s ease-out background;
+  width: 1.771vw;
+  height: 1.771vw;
+  background: #ffffff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.roadmap .left-block .social a svg {
+  width: 0.938vw;
+  height: auto;
+}
+.roadmap .left-block .social a svg path {
+  transition: 0.25s ease-out fill;
+}
+.roadmap .left-block .social a:hover {
+  background: #ea5f1b;
+}
+.roadmap .left-block .social a:hover svg path {
+  fill: #ffffff;
+}
+.roadmap .left-block .reserved {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.938vw;
+  line-height: 1.458vw;
+  color: #ffffff;
+}
+.roadmap .roadmap_item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.083vw;
+  padding: 6.25vw 0 5.729vw 0;
+}
+.roadmap .roadmap_item-container .roadmap_item {
+  width: 40.625vw;
+  height: 23.75vw;
+  display: flex;
+  flex-direction: column;
+  padding: 1.563vw;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.roadmap .roadmap_item-container .roadmap_item:first-child {
+  cursor: auto;
+}
+.roadmap .roadmap_item-container .roadmap_item:first-child .circle {
+  display: none;
+}
+.roadmap .roadmap_item-container .roadmap_item:first-child .date {
+  margin: auto 0 0 0;
+}
+.roadmap .roadmap_item-container .roadmap_item:hover .item-bg {
+  transform: scale(1.2);
+}
+.roadmap .roadmap_item-container .roadmap_item:hover .circle {
+  background: #ea5f1b;
+}
+.roadmap .roadmap_item-container .roadmap_item:hover .circle svg path {
+  stroke: #ffffff;
+}
+.roadmap .roadmap_item-container .roadmap_item .item-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  transition: 0.25s ease-out transform;
+}
+.roadmap .roadmap_item-container .roadmap_item .circle {
+  margin: auto 0 0 0;
+  height: 3.385vw;
+  width: 3.385vw;
+  border-radius: 100%;
+  text-decoration: none;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease-out background;
+}
+.roadmap .roadmap_item-container .roadmap_item .circle svg {
+  width: 1.198vw;
+  height: auto;
+}
+.roadmap .roadmap_item-container .roadmap_item .circle svg path {
+  transition: 0.25s ease-out stroke;
+}
+.roadmap .roadmap_item-container .roadmap_item .circle:hover {
+  background: #ea5f1b;
+}
+.roadmap .roadmap_item-container .roadmap_item .circle:hover svg path {
+  stroke: #ffffff;
+}
+.roadmap .roadmap_item-container .roadmap_item .status {
+  position: relative;
+  padding: 0 0.469vw;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0 0 0 auto;
+  min-width: 3.49vw;
+}
+.roadmap .roadmap_item-container .roadmap_item .status img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.roadmap .roadmap_item-container .roadmap_item .status span {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.938vw;
+  line-height: 1.458vw;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.roadmap .roadmap_item-container .roadmap_item .status span svg {
+  width: 1.25vw;
+  height: auto;
+}
+.roadmap .roadmap_item-container .roadmap_item .date {
+  margin: 2.083vw 0 0 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.938vw;
+  line-height: 1.458vw;
+  color: #ffffff;
+  padding: 0 0.521vw;
+  border: 1px solid #ffffff;
+  border-radius: 5.208vw;
+  width: -moz-max-content;
+  width: max-content;
+}
+.roadmap .roadmap_item-container .roadmap_item .item-title {
+  margin: 0.781vw 0 0 0;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.063vw;
+  line-height: 4.063vw;
+  color: #ffffff;
+}
+.roadmap .roadmap_item-container .roadmap_item.blocked {
+  cursor: auto;
+}
+.roadmap .roadmap_item-container .roadmap_item.blocked .status img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(245deg) brightness(108%) contrast(104%);
+}
+.roadmap .roadmap_item-container .roadmap_item.blocked .circle {
+  display: none;
+}
+.roadmap .roadmap_item-container .roadmap_item.blocked .date {
+  margin: auto 0 0 0;
+}/*# sourceMappingURL=laptop.css.map */
