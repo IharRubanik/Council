@@ -7,23 +7,23 @@ window.onload = function () {
     (bgContainer2 = document.querySelector(".bg-container2")),
     (topMargin = manifestBg.clientHeight - screenHeight);
 
+  // resize
+  window.addEventListener("resize", function () {
+    topBg()
+  });
 
-    // resize
-    window.addEventListener("resize", function () {
-      screenHeight = window.innerHeight;
-      let topMargin = manifestBg.clientHeight - screenHeight;
-      bgContainer2.style.top = -topMargin + "px";
-    });
- 
-
-// scroll
+  (function topBg() {
+    screenHeight = window.innerHeight;
+    let topMargin = manifestBg.clientHeight - screenHeight;
+    bgContainer2.style.top = -topMargin + "px";
+  })()
+  // scroll
   window.onscroll = function () {
     var scrollTop = window.pageYOffset
       ? window.pageYOffset
       : document.documentElement.scrollTop
       ? document.documentElement.scrollTop
       : document.body.scrollTop;
-
 
     if (scrollTop >= screenHeight * 1.25) {
       main.classList.add("opacity");
