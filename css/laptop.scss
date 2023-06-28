@@ -140,6 +140,27 @@ body {
   width: 100%;
   height: auto;
 }
+.burger-menu{
+  display: none;
+}
+.close{
+  display: none;
+}
+.blur{display: none;}
+.header-logo {
+  position: fixed;
+  top: 1.979vw;
+  left: 3.125vw;
+  z-index: 25;
+  a {
+    text-decoration: none;
+    outline: 0;
+    .logo {
+      width: 4.479vw;
+      height: auto;
+    }
+  }
+}
 .header {
   padding: 1.979vw 0 0 0;
   z-index: 20;
@@ -148,19 +169,7 @@ body {
   right: 3.125vw;
   .header_container {
     width: max-content;
-    .header-logo {
-      position: fixed;
-      top: 1.979vw;
-      left: 3.125vw;
-      a {
-        text-decoration: none;
-        outline: 0;
-        .logo {
-          width: 4.479vw;
-          height: auto;
-        }
-      }
-    }
+
     .navigation-container {
       position: relative;
       z-index: 2;
@@ -279,6 +288,7 @@ body {
         margin: 0 0 0 19.531vw;
         transform: translateY(-200%);
         width: 36.25vw;
+        height: auto;
       }
       .main-subtitle {
         width: 46.615vw;
@@ -331,7 +341,6 @@ body {
       left: 0;
       .manifesto-bg {
         width: 100%;
-        // height: 100%;
         object-fit: cover;
         object-position: bottom;
         transition: 0.25s ease-out filter, 0.25s ease-out opacity;
@@ -392,18 +401,13 @@ body {
   display: flex;
   gap: 3.646vw;
   padding: 0 0 0 3.125vw;
-  // &.opacity {
-  //   background: #141313;
-  //   mix-blend-mode: lighten;
-  // }
   .sparks-container {
-    position: absolute;
+    position: fixed;
     left: -1.094vw;
-    top: 19.375vw;
+    bottom: 0;
     background: #141313;
     opacity: 0;
     z-index: -1;
-    // transition: 1s ease-out opacity;
     .sparks {
       width: 62.5vw;
       height: auto;
@@ -467,6 +471,7 @@ body {
     padding: 6.25vw 0 5.729vw 0;
 
     .roadmap_item {
+      box-sizing: border-box;
       width: 40.625vw;
       height: 23.75vw;
       display: flex;

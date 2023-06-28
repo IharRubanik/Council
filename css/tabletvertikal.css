@@ -1,0 +1,275 @@
+@media only screen and (max-width: 860px) {
+  ._container {
+    padding: 0 3.906vw;
+  }
+  .burger-menu {
+    right: 3.906vw;
+    top: 3.906vw;
+    z-index: 20;
+    padding: 1.302vw 0.911vw;
+    gap: 0.521vw;
+    border-radius: 0.521vw;
+  }
+  .burger-menu span {
+    width: 2.604vw;
+    height: 0.26vw;
+  }
+  .close {
+    width: 4.427vw;
+    height: 4.427vw;
+    margin: 0 0 2.604vw auto;
+    transform: translateX(0.911vw);
+  }
+  .close span {
+    width: 2.604vw;
+    height: 0.26vw;
+  }
+  .blur {
+    -webkit-backdrop-filter: blur(0.521vw);
+            backdrop-filter: blur(0.521vw);
+  }
+  .header-logo {
+    top: 3.906vw;
+    left: 3.906vw;
+  }
+  .header-logo a .logo {
+    width: 11.198vw;
+  }
+  .header .header_container {
+    padding: 3.906vw;
+  }
+  .header .header_container .navigation-container {
+    gap: 6.51vw;
+  }
+  .header .header_container .navigation-container .connect-wallet {
+    padding: 1.042vw 6.771vw;
+    border-radius: 0.521vw;
+    font-size: 1.953vw;
+    line-height: 100%;
+    max-height: 4.297vw;
+  }
+  .header .header_container .navigation-container .navigation {
+    font-size: 1.953vw;
+    gap: 3.255vw;
+  }
+  .header .header_container .navigation-container .navigation li .navigation-item.active::after {
+    width: 2.474vw;
+    height: 0.26vw;
+  }
+  .main .main-bg {
+    -o-object-position: 75% 50%;
+       object-position: 75% 50%;
+  }
+  .main .main_container {
+    padding: 0 3.906vw;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  .main .main_container .main-wrapper {
+    position: absolute;
+    bottom: 8.594vw;
+    left: 3.906vw;
+    width: 100%;
+    margin: 0;
+    top: auto;
+    transform: translate(0);
+  }
+  .main .main_container .main-wrapper .social {
+    margin: 0;
+    gap: 1.563vw;
+  }
+  .main .main_container .main-wrapper .social a {
+    width: 4.427vw;
+    height: 4.427vw;
+  }
+  .main .main_container .main-wrapper .social a svg {
+    width: 2.344vw;
+  }
+  .main .main_container .main-wrapper .main-title {
+    margin: 3.906vw 0 0 0;
+    font-size: 21.094vw;
+  }
+  .main .main_container .main-wrapper .title-line {
+    margin: 0 0 0 28.125vw;
+    width: 52.604vw;
+  }
+  .main .main_container .main-wrapper .main-subtitle {
+    width: 76.432vw;
+    margin: 2.604vw 0 0 0;
+  }
+  .main .main_container .main-wrapper .main-subtitle p {
+    font-size: 2.604vw;
+    line-height: 3.646vw;
+  }
+  .main .main_container .main-wrapper .main-subtitle::before {
+    width: 1.563vw;
+    height: 1.563vw;
+    left: 0;
+    top: -2.604vw;
+  }
+  .manifesto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 31.25vw;
+  }
+  .manifesto .bg-container .bg-container2 {
+    top: 0 !important;
+    left: 0;
+  }
+  .manifesto .bg-container .bg-container2 .manifesto-bg {
+    height: 100vh;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .manifesto .manifesto-title {
+    padding: 125vh 0 0 0;
+    height: auto;
+    font-size: 16.146vw;
+    line-height: 100%;
+  }
+  .manifesto .manifesto-text {
+    height: auto;
+  }
+  .manifesto .manifesto-text h3 {
+    width: auto;
+    margin: 0 0 0 2.604vw;
+    font-size: 7.552vw;
+    line-height: 100%;
+  }
+  .manifesto .manifesto-text span {
+    margin: 0 0 0 2.604vw;
+    font-size: 2.865vw;
+    line-height: 100%;
+    padding: 0.391vw 0 0 0;
+    border-top: 0.26vw solid #ea5f1b;
+    border-bottom: 0.26vw solid #ea5f1b;
+  }
+  .manifesto .manifesto-text p {
+    margin: 2.604vw;
+    font-size: 2.604vw;
+    line-height: 3.646vw;
+  }
+  .manifesto .text1 {
+    padding: 0;
+  }
+  .manifesto .text1 p {
+    width: auto;
+  }
+  .manifesto .text2 {
+    padding: 0;
+  }
+  .manifesto .text2 p {
+    width: auto;
+  }
+  .manifesto .text3 {
+    padding: 0;
+  }
+  .manifesto .text3 p {
+    width: auto;
+  }
+  .roadmap {
+    margin: 0vh 0 0 0;
+    gap: 2.604vw;
+    padding: 0 0 34.635vw 2.604vw;
+    z-index: 1;
+    flex-direction: column;
+  }
+  .roadmap .sparks-container {
+    background: #141313;
+    opacity: 0;
+    z-index: -1;
+    left: 0;
+  }
+  .roadmap .sparks-container .sparks {
+    width: 100%;
+  }
+  .roadmap .left-block {
+    padding: 10.417vw 0 0 0;
+    gap: 5.208vw;
+    position: static;
+    justify-content: flex-start;
+    height: auto;
+  }
+  .roadmap .left-block .roadmap-title {
+    text-align: start;
+    margin: 0;
+    font-size: 16.146vw;
+    line-height: 100%;
+  }
+  .roadmap .left-block .social {
+    position: absolute;
+    bottom: 13.021vw;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 1.563vw;
+  }
+  .roadmap .left-block .social a {
+    width: 4.427vw;
+    height: 4.427vw;
+  }
+  .roadmap .left-block .social a svg {
+    width: 2.344vw;
+    height: auto;
+  }
+  .roadmap .left-block .social a svg path {
+    transition: 0.25s ease-out fill;
+  }
+  .roadmap .left-block .reserved {
+    position: absolute;
+    bottom: 6.51vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 2.083vw;
+    line-height: 3.255vw;
+  }
+  .roadmap .roadmap_item-container {
+    gap: 3.906vw;
+    padding: 2.604vw 0 0vw 0;
+    align-items: center;
+  }
+  .roadmap .roadmap_item-container .roadmap_item {
+    width: 61.458vw;
+    height: 35.938vw;
+    padding: 1.953vw;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .circle {
+    height: 5.208vw;
+    width: 5.208vw;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .circle svg {
+    width: 1.953vw;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .status {
+    padding: 0 0.521vw;
+    min-width: 7.813vw;
+    display: flex;
+    justify-content: center;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .status span {
+    font-size: 1.823vw;
+    line-height: 2.604vw;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .status span svg {
+    width: 2.604vw;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .date {
+    margin: 2.604vw 0 0 0;
+    font-size: 2.083vw;
+    line-height: 3.125vw;
+    padding: 0 0.781vw;
+    border: 1px solid #ffffff;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .item-title {
+    margin: 1.302vw 0 0 0;
+    font-size: 6.25vw;
+    line-height: 100%;
+  }
+  .roadmap .roadmap_item-container .roadmap_item.blocked .status {
+    justify-content: flex-end;
+  }
+}/*# sourceMappingURL=tabletvertikal.css.map */

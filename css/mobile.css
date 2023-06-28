@@ -1,1 +1,199 @@
-/*# sourceMappingURL=mobile.css.map */
+@media only screen and (max-width: 600px) {
+  ._container {
+    padding: 0 15px;
+  }
+  .burger-menu {
+    right: 15px;
+    top: 20px;
+    padding: 10px 7px;
+    gap: 4px;
+    border-radius: 4px;
+  }
+  .burger-menu span {
+    width: 20px;
+    height: 2px;
+  }
+  .close {
+    width: 34px;
+    height: 34px;
+    margin: 0 0 20px auto;
+    transform: translateX(7px);
+  }
+  .close span {
+    width: 20px;
+    height: 2px;
+  }
+  .blur {
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+  }
+  .header-logo {
+    top: 25px;
+    left: 15px;
+  }
+  .header-logo a .logo {
+    width: 86px;
+  }
+  .header .header_container {
+    padding: 15px;
+  }
+  .header .header_container .navigation-container {
+    gap: 50px;
+  }
+  .header .header_container .navigation-container .connect-wallet {
+    padding: 8px 52px;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 100%;
+    max-height: 33px;
+  }
+  .header .header_container .navigation-container .navigation {
+    font-size: 15px;
+    gap: 25px;
+  }
+  .header .header_container .navigation-container .navigation li .navigation-item.active::after {
+    width: 19px;
+    height: 2px;
+  }
+  .main .main-bg {
+    -o-object-position: 70% 50%;
+       object-position: 70% 50%;
+  }
+  .main .main_container {
+    padding: 0 15px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  .main .main_container .main-wrapper {
+    position: absolute;
+    bottom: 132px;
+    left: 15px;
+  }
+  .main .main_container .main-wrapper .social {
+    gap: 12px;
+  }
+  .main .main_container .main-wrapper .social a {
+    width: 34px;
+    height: 34px;
+  }
+  .main .main_container .main-wrapper .social a svg {
+    width: 18px;
+  }
+  .main .main_container .main-wrapper .main-title {
+    margin: 20px 0 0 0;
+    font-size: 90px;
+  }
+  .main .main_container .main-wrapper .title-line {
+    margin: 0 0 0 100px;
+    width: 244px;
+  }
+  .main .main_container .main-wrapper .main-subtitle {
+    width: 337px;
+    margin: 20px 0 0 7px;
+  }
+  .main .main_container .main-wrapper .main-subtitle p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .main .main_container .main-wrapper .main-subtitle::before {
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: -20px;
+  }
+  .manifesto {
+    gap: 456px;
+  }
+  .manifesto .manifesto-title {
+    font-size: 90px;
+  }
+  .manifesto .manifesto-text h3 {
+    width: auto;
+    margin: 0 0 0 15px;
+    font-size: 48px;
+  }
+  .manifesto .manifesto-text span {
+    margin: 0 0 0 15px;
+    font-size: 22px;
+    padding: 3px 0 0 0;
+    border-top: 2px solid #ea5f1b;
+    border-bottom: 2px solid #ea5f1b;
+  }
+  .manifesto .manifesto-text p {
+    margin: 15px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .roadmap {
+    margin: 0vh 0 0 0;
+    gap: 20px;
+    padding: 0 0 207px 15px;
+  }
+  .roadmap .left-block {
+    padding: 100px 0 0 0;
+    height: auto;
+    gap: 30px;
+  }
+  .roadmap .left-block .roadmap-title {
+    font-size: 90px;
+  }
+  .roadmap .left-block .social {
+    bottom: 93px;
+    gap: 12px;
+  }
+  .roadmap .left-block .social a {
+    width: 34px;
+    height: 34px;
+  }
+  .roadmap .left-block .social a svg {
+    width: 18px;
+    height: auto;
+  }
+  .roadmap .left-block .reserved {
+    bottom: 43px;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .roadmap .roadmap_item-container {
+    gap: 30px;
+    padding: 20px 0 0px 0;
+    width: 345px;
+  }
+  .roadmap .roadmap_item-container .roadmap_item {
+    width: 100%;
+    height: 202px;
+    padding: 13px;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .circle {
+    height: 34px;
+    width: 34px;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .circle svg {
+    width: 13px;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .status {
+    padding: 0 4px;
+    min-width: 60px;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .status span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .status span svg {
+    width: 20px;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .date {
+    margin: 20px 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 6px;
+    border: 1px solid #ffffff;
+  }
+  .roadmap .roadmap_item-container .roadmap_item .item-title {
+    margin: 10px 0 0 0;
+    font-size: 42px;
+  }
+}/*# sourceMappingURL=mobile.css.map */
