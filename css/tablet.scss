@@ -226,9 +226,6 @@
           object-fit: cover;
           object-position: bottom;
           transition: 0.25s ease-out filter, 0.25s ease-out opacity;
-          &.blend {
-            filter: brightness(0.5);
-          }
           &.opacity {
             opacity: 0;
           }

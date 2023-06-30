@@ -1,22 +1,20 @@
 window.onload = function () {
   let screenHeight = window.innerHeight,
-    main = document.querySelector(".main");
-  (manifestBg = document.querySelector(".manifesto-bg")),
-    (manifesto = document.querySelector(".manifesto")),
-    (manifestoContainer = document.querySelector(".bg-container")),
-    (roadmap = document.querySelector(".roadmap")),
-    (sparksContainer = document.querySelector(".sparks-container")),
-    (bgContainer = document.querySelector(".bg-container")),
-    (bgContainer2 = document.querySelector(".bg-container2")),
-    (burgerMenu = document.querySelector(".burger-menu")),
-    (closeMenu = document.querySelector(".close")),
-    (header = document.querySelector(".header")),
-    (blurMenu = document.querySelector(".blur")),
-    (body = document.querySelector("body")),
-    (roadmapTitle = document.querySelector(".roadmap-title")),
-    (manifestoText = document.querySelector("#manifesto-text")),
-    (headerLogo = document.querySelector(".header-logo")),
-    (topMargin = manifestBg.clientHeight - screenHeight);
+    main = document.querySelector(".main"),
+  manifestBg = document.querySelector(".manifesto-bg"),
+    manifesto = document.querySelector(".manifesto"),
+    manifestoContainer = document.querySelector(".bg-container"),
+    roadmap = document.querySelector(".roadmap"),
+    sparksContainer = document.querySelector(".sparks-container"),
+    bgContainer = document.querySelector(".bg-container"),
+    bgContainer2 = document.querySelector(".bg-container2"),
+    burgerMenu = document.querySelector(".burger-menu"),
+    closeMenu = document.querySelector(".close"),
+    header = document.querySelector(".header"),
+    blurMenu = document.querySelector(".blur"),
+    body = document.querySelector("body"),
+    headerLogo = document.querySelector(".header-logo");
+
 
   const mediaQuery860 = window.matchMedia("only screen and (max-width: 860px)");
   const mediaQuery600 = window.matchMedia("only screen and (max-width: 600px)");
@@ -47,14 +45,23 @@ window.onload = function () {
     doc.style.setProperty("--app-height", `${window.innerHeight}px`);
   };
 
-  window.addEventListener("resize", appHeight);
-  appHeight();
+  // window.addEventListener("resize", appHeight);
+  // appHeight()
 
   // resize
   window.addEventListener("resize", function () {
-    // appHeight()
-    topBg();
+    appHeight()
+    observer()
+    topBg()
+    scroll()
   });
+
+
+  window.addEventListener("orientationchange", function() {
+    observer()
+    topBg()
+    scroll()
+}, false);
 
   function topBg() {
     screenHeight = window.innerHeight;
@@ -63,14 +70,13 @@ window.onload = function () {
   }
   topBg();
   // scroll
+function scroll() {
   window.onscroll = function () {
     var scrollTop = window.pageYOffset
       ? window.pageYOffset
       : document.documentElement.scrollTop
       ? document.documentElement.scrollTop
       : document.body.scrollTop;
-
-    // if (!mediaQuery860.matches || !mediaQuery600.matches) {
     if (scrollTop >= screenHeight * 1.25) {
       main.classList.add("opacity");
     } else {
@@ -90,27 +96,35 @@ window.onload = function () {
       }
     }
   };
+}
+scroll()
 
-  let observerRoadmap = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          bgContainer.style.display = "none";
-        }, 250);
-        manifestBg.classList.add("opacity");
-        sparksContainer.style.opacity = "1";
-        sparksContainer.style.transition = "1s ease-out opacity";
-      } else {
-        bgContainer.style.display = "block";
-        setTimeout(() => {
-          manifestBg.classList.remove("opacity");
-          sparksContainer.style.opacity = "0";
-          sparksContainer.style.transition = "0s";
-        }, 100);
-     
-      }
-    });
-  }, {});
-
-  observerRoadmap.observe(roadmap);
+  function observer() {
+    let observerRoadmap = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            bgContainer.style.display = "none";
+            sparksContainer.style.display = "block";
+          }, 250);
+          manifestBg.classList.add("opacity");
+          sparksContainer.style.opacity = "1";
+          sparksContainer.style.transition = "1s ease-out opacity";
+          
+        } else {
+          bgContainer.style.display = "block";
+          setTimeout(() => {
+            manifestBg.classList.remove("opacity");
+            sparksContainer.style.opacity = "0";
+            sparksContainer.style.transition = "0s";
+            sparksContainer.style.display = "none";
+          }, 100);
+       
+        }
+      });
+    }, {});
+  
+    observerRoadmap.observe(roadmap);
+  }
+  observer()
 };

@@ -194,9 +194,6 @@
        object-position: bottom;
     transition: 0.25s ease-out filter, 0.25s ease-out opacity;
   }
-  .manifesto .bg-container .bg-container2 .manifesto-bg.blend {
-    filter: brightness(0.5);
-  }
   .manifesto .bg-container .bg-container2 .manifesto-bg.opacity {
     opacity: 0;
   }
