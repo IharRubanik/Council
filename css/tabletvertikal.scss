@@ -106,6 +106,7 @@
       position: relative;
       height: 100vh;
       height: var(--app-height);
+      transition: .25s ease-out height;
       width: 100%;
       .main-wrapper {
         position: absolute;
@@ -163,7 +164,11 @@
         .manifesto-bg {
           height: 100vh;
           height: var(--app-height);
+          transition: 0.25s ease-out filter, 0.25s ease-out opacity, 0.25s ease-out height;
           object-position: top;
+          &.opacity {
+            opacity: 0;
+          }
         }
       }
     }
@@ -208,7 +213,7 @@
     }
   }
   .roadmap {
-    margin: 0vh 0 0 0;
+    margin: 15vh 0 0 0;
     gap: 2.604vw;
     padding: 0 0 34.635vw 2.604vw;
     z-index: 1;

@@ -99,7 +99,7 @@
     background: rgba(20, 19, 19, 0.7);
     z-index: -1;
     backdrop-filter: blur(0.391vw);
-    transition: .25s ease-out opacity;
+    transition: .25s ease-out opacity, .25s ease-out height;
     opacity: 0;
     &.active{
         opacity: 1;
@@ -123,7 +123,7 @@
     height: var(--app-height);
     display: flex;
     justify-content: flex-end;
-    transition: 0.25s ease-out transform;
+    transition: 0.25s ease-out transform, .25s ease-out height;
     transform: translateX(100%);
     &.active {
       transform: translateX(0);
@@ -203,8 +203,9 @@
   .manifesto {
     position: relative;
     width: 100%;
-    height: 1150vh;
+    height: auto;
     overflow-y: visible;
+    z-index: 6;
     .bg-container {
       position: absolute;
       top: 0;
@@ -217,6 +218,7 @@
         width: 100%;
         height: 100vh;
         height: var(--app-height);
+        transition: .25s ease-out height;
         top: 0;
         left: 0;
         .manifesto-bg {
@@ -272,7 +274,7 @@
     }
   }
   .roadmap {
-    margin: -50vh 0 0 0;
+    margin: 0vh 0 0 0;
     gap: 12.402vw;
     padding: 0 0 0 2.93vw;
     .sparks-container {
@@ -288,6 +290,7 @@
       padding: 7.813vw 0 0 0;
       height: calc(100vh - 7.813vw);
       height: calc(var(--app-height) - 7.813vw);
+      transition: .25s ease-out height;
       gap: 3.906vw;
       .roadmap-title {
         @include h2();

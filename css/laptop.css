@@ -179,6 +179,7 @@ body {
   width: 100%;
   height: 100vh;
   height: var(--app-height);
+  transition: 0.25s ease-out height;
   z-index: 1;
   transition: 0.25s ease-out opacity;
 }
@@ -189,6 +190,7 @@ body {
   width: 100%;
   height: 100vh;
   height: var(--app-height);
+  transition: 0.25s ease-out height;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 0;
@@ -285,11 +287,12 @@ body {
 .manifesto {
   margin: 100vh 0 0 0;
   margin: var(--app-height) 0 0 0;
+  transition: 0.25s ease-out margin;
   position: relative;
   width: 100%;
   height: 1150vh;
   overflow-y: visible;
-  z-index: 6;
+  z-index: 4;
 }
 .manifesto .bg-container {
   position: absolute;
@@ -306,6 +309,7 @@ body {
   height: var(--app-height);
   top: 0;
   left: 0;
+  transition: 0.25s ease-out height;
 }
 .manifesto .bg-container .bg-container2 .manifesto-bg {
   width: 100%;
@@ -317,6 +321,7 @@ body {
 }
 .manifesto .bg-container .bg-container2 .manifesto-bg.blend {
   filter: brightness(0.5);
+  opacity: 0.3;
 }
 .manifesto .bg-container .bg-container2 .manifesto-bg.opacity {
   opacity: 0;
@@ -326,6 +331,7 @@ body {
   position: relative;
   height: 100vh;
   height: var(--app-height);
+  transition: 0.25s ease-out height;
   z-index: 3;
   font-family: "Bebas Neue";
   font-style: normal;
@@ -339,7 +345,8 @@ body {
   position: relative;
   height: 100vh;
   height: var(--app-height);
-  z-index: 3;
+  transition: 0.25s ease-out height;
+  z-index: 6;
 }
 .manifesto .manifesto-text h3 {
   font-family: "Bebas Neue";
@@ -392,7 +399,7 @@ body {
 }
 
 .roadmap {
-  margin: -50vh 0 0 0;
+  margin: 0;
   position: relative;
   z-index: 5;
   display: flex;
@@ -419,6 +426,7 @@ body {
   top: 0;
   height: calc(100vh - 9.375vw);
   height: calc(var(--app-height) - 9.375vw);
+  transition: 0.25s ease-out height;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -506,6 +514,17 @@ body {
 }
 .roadmap .roadmap_item-container .roadmap_item:hover .circle svg path {
   stroke: #ffffff;
+}
+.roadmap .roadmap_item-container .roadmap_item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .roadmap .roadmap_item-container .roadmap_item .item-bg {
   position: absolute;
@@ -602,6 +621,9 @@ body {
 .roadmap .roadmap_item-container .roadmap_item.blocked {
   cursor: auto;
 }
+.roadmap .roadmap_item-container .roadmap_item.blocked::before {
+  background-image: url("../img/roadmap/mask4.png");
+}
 .roadmap .roadmap_item-container .roadmap_item.blocked .status img {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(245deg) brightness(108%) contrast(104%);
 }
@@ -610,4 +632,13 @@ body {
 }
 .roadmap .roadmap_item-container .roadmap_item.blocked .date {
   margin: auto 0 0 0;
+}
+.roadmap .roadmap_item-container .roadmap_item.item1::before {
+  background-image: url("../img/roadmap/mask1.png");
+}
+.roadmap .roadmap_item-container .roadmap_item.item2::before {
+  background-image: url("../img/roadmap/mask2.png");
+}
+.roadmap .roadmap_item-container .roadmap_item.item3::before {
+  background-image: url("../img/roadmap/mask3.png");
 }/*# sourceMappingURL=laptop.css.map */

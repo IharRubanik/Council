@@ -6,6 +6,7 @@ window.onload = function () {
     (manifestoContainer = document.querySelector(".bg-container")),
     (roadmap = document.querySelector(".roadmap")),
     (sparksContainer = document.querySelector(".sparks-container")),
+    (bgContainer = document.querySelector(".bg-container")),
     (bgContainer2 = document.querySelector(".bg-container2")),
     (burgerMenu = document.querySelector(".burger-menu")),
     (closeMenu = document.querySelector(".close")),
@@ -41,14 +42,13 @@ window.onload = function () {
     }, 250);
   });
 
-
   const appHeight = () => {
-    const doc = document.documentElement
-    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
-}
+    const doc = document.documentElement;
+    doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+  };
 
-window.addEventListener('resize', appHeight)
-appHeight()
+  window.addEventListener("resize", appHeight);
+  appHeight();
 
   // resize
   window.addEventListener("resize", function () {
@@ -70,48 +70,47 @@ appHeight()
       ? document.documentElement.scrollTop
       : document.body.scrollTop;
 
-
     // if (!mediaQuery860.matches || !mediaQuery600.matches) {
+    if (scrollTop >= screenHeight * 1.25) {
+      main.classList.add("opacity");
+    } else {
+      main.classList.remove("opacity");
+    }
+    if (scrollTop >= screenHeight * 2) {
+      manifestBg.classList.add("blend");
+    } else {
+      manifestBg.classList.remove("blend");
+    }
+
+    if (mediaQuery860.matches || mediaQuery600.matches) {
       if (scrollTop >= screenHeight * 1.25) {
-        main.classList.add("opacity");
+        headerLogo.style.opacity = "0";
       } else {
-        main.classList.remove("opacity");
+        headerLogo.style.opacity = "1";
       }
-      if (scrollTop >= screenHeight * 2) {
-        manifestBg.classList.add("blend");
-      } else {
-        manifestBg.classList.remove("blend");
-      }
-
-
-
- if (mediaQuery860.matches || mediaQuery600.matches) {
-  if (scrollTop >= screenHeight * 1.25) {
-    headerLogo.style.opacity = '0'
-  }
-  else{
-    headerLogo.style.opacity = '1'
-  }
- }
-
-
-
+    }
   };
 
   let observerRoadmap = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
+        setTimeout(() => {
+          bgContainer.style.display = "none";
+        }, 250);
         manifestBg.classList.add("opacity");
         sparksContainer.style.opacity = "1";
         sparksContainer.style.transition = "1s ease-out opacity";
       } else {
-        manifestBg.classList.remove("opacity");
-        sparksContainer.style.opacity = "0";
-        sparksContainer.style.transition = "0s";
+        bgContainer.style.display = "block";
+        setTimeout(() => {
+          manifestBg.classList.remove("opacity");
+          sparksContainer.style.opacity = "0";
+          sparksContainer.style.transition = "0s";
+        }, 100);
+     
       }
     });
   }, {});
 
   observerRoadmap.observe(roadmap);
-  // observer.observe(manifestoText);
 };

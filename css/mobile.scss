@@ -1,88 +1,88 @@
 @media only screen and (max-width: 600px) {
   @mixin h2 {
-    font-size: 90px;
+    font-size: 24vw;
   }
   @mixin h3 {
-    font-size: 48px;
+    font-size: 12.8vw;
   }
   @mixin h4 {
-    font-size: 42px;
+    font-size: 11.2vw;
   }
   @mixin text {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 4.8vw;
+    line-height: 6.4vw;
   }
   @mixin text-mini {
-    font-size: 22px;
-    padding: 3px 0 0 0;
-    border-top: 2px solid #ea5f1b;
-    border-bottom: 2px solid #ea5f1b;
+    font-size: 5.867vw;
+    padding: 0.8vw 0 0 0;
+    border-top: 0.533vw solid #ea5f1b;
+    border-bottom: 0.533vw solid #ea5f1b;
   }
   @mixin social {
-    width: 34px;
-    height: 34px;
+    width: 9.067vw;
+    height: 9.067vw;
   }
   @mixin button {
-    padding: 8px 52px;
-    border-radius: 4px;
-    font-size: 15px;
+    padding: 2.133vw 13.867vw;
+    border-radius: 1.067vw;
+    font-size: 4vw;
     line-height: 100%;
-    max-height: 33px;
+    max-height: 8.6vw;
   }
 
   ._container {
-    padding: 0 15px;
+    padding: 0 4vw;
   }
   .burger-menu {
-    right: 15px;
-    top: 20px;
-    padding: 10px 7px;
-    gap: 4px;
-    border-radius: 4px;
+    right: 4vw;
+    top: 5.333vw;
+    padding: 2.667vw 1.867vw;
+    gap: 1.067vw;
+    border-radius: 1.067vw;
     span {
-      width: 20px;
-      height: 2px;
+      width: 5.333vw;
+      height: 0.533vw;
     }
   }
   .close {
-    width: 34px;
-    height: 34px;
-    margin: 0 0 20px auto;
-    transform: translateX(7px);
+    width: 9.067vw;
+    height: 9.067vw;
+    margin: 0 0 5.333vw auto;
+    transform: translateX(1.867vw);
     span {
-      width: 20px;
-      height: 2px;
+      width: 5.333vw;
+      height: 0.533vw;
     }
   }
   .blur {
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(1.067vw);
   }
   .header-logo {
-    top: 25px;
-    left: 15px;
+    top: 6.667vw;
+    left: 4vw;
     a {
       .logo {
-        width: 86px;
+        width: 22.933vw;
       }
     }
   }
   .header {
     .header_container {
-      padding: 15px;
+      padding: 4vw;
       .navigation-container {
-        gap: 50px;
+        gap: 13.333vw;
         .connect-wallet {
           @include button();
         }
         .navigation {
-          font-size: 15px;
-          gap: 25px;
+          font-size: 4vw;
+          gap: 6.667vw;
           li {
             .navigation-item {
               &.active {
                 &::after {
-                  width: 19px;
-                  height: 2px;
+                  width: 5.067vw;
+                  height: 0.533vw;
                 }
               }
             }
@@ -96,133 +96,134 @@
       object-position: 70% 50%;
     }
     .main_container {
-      padding: 0 15px;
+      padding: 0 4vw;
       position: relative;
       height: 100vh;
       height: var(--app-height);
+      transition: .25s ease-out height;
       width: 100%;
       .main-wrapper {
         position: absolute;
-        bottom: 132px;
-        left: 15px;
+        bottom: 9vh;
+        left: 4vw;
         .social {
-          gap: 12px;
+          gap: 3.2vw;
           a {
             svg {
-              width: 18px;
+              width: 4.8vw;
             }
             @include social();
           }
         }
         .main-title {
-          margin: 20px 0 0 0;
-          font-size: 90px;
+          margin: 5.333vw 0 0 0;
+          font-size: 24vw;
         }
         .title-line {
-          margin: 0 0 0 100px;
-          width: 244px;
+          margin: 0 0 0 26.667vw;
+          width: 65.067vw;
         }
         .main-subtitle {
-          width: 337px;
-          margin: 20px 0 0 7px;
+          width: 89.867vw;
+          margin: 5.333vw 0 0 1.867vw;
           p {
             @include text();
           }
           &::before {
-            width: 12px;
-            height: 12px;
+            width: 3.2vw;
+            height: 3.2vw;
             left: 0;
-            top: -20px;
+            top: -5.333vw;
           }
         }
       }
     }
   }
   .manifesto {
-    gap: 456px;
+    gap: 121.6vw;
     .manifesto-title {
       @include h2();
     }
     .manifesto-text {
       h3 {
         width: auto;
-        margin: 0 0 0 15px;
+        margin: 0 0 0 4vw;
         @include h3();
       }
       span {
-        margin: 0 0 0 15px;
+        margin: 0 0 0 4vw;
         @include text-mini();
       }
       p {
-        margin: 15px;
+        margin: 4vw;
         @include text();
       }
     }
   }
   .roadmap {
-    margin: 0vh 0 0 0;
-    gap: 20px;
-    padding: 0 0 207px 15px;
+    margin: 20vh 0 0 0;
+    gap: 5.333vw;
+    padding: 0 0 55.2vw 4vw;
     .left-block {
-      padding: 100px 0 0 0;
+      padding: 26.667vw 0 0 0;
       height: auto;
-      gap: 30px;
+      gap: 8vw;
       .roadmap-title {
         @include h2();
       }
       .social {
-        bottom: 93px;
-        gap: 12px;
+        bottom: 24.8vw;
+        gap: 3.2vw;
         a {
           svg {
-            width: 18px;
+            width: 4.8vw;
             height: auto;
           }
           @include social();
         }
       }
       .reserved {
-        bottom: 43px;
+        bottom: 11.467vw;
         width: max-content;
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 4.267vw;
+        line-height: 6.667vw;
       }
     }
     .roadmap_item-container {
-      gap: 30px;
-      padding: 20px 0 0px 0;
-      width: 345px;
+      gap: 8vw;
+      padding: 5.333vw 0 0vw 0;
+      width: 92vw;
       .roadmap_item {
         width: 100%;
-        height: 202px;
-        padding: 13px;
+        height: 53.867vw;
+        padding: 3.467vw;
         .circle {
-          height: 34px;
-          width: 34px;
+          height: 9.067vw;
+          width: 9.067vw;
           svg {
-            width: 13px;
+            width: 3.467vw;
           }
         }
         .status {
-          padding: 0 4px;
-          min-width: 60px;
+          padding: 0 1.067vw;
+          min-width: 16vw;
           span {
-            font-size: 14px;
-            line-height: 20px;
+            font-size: 3.733vw;
+            line-height: 5.333vw;
             svg {
-              width: 20px;
+              width: 5.333vw;
             }
           }
         }
         .date {
-          margin: 20px 0 0 0;
-          font-size: 16px;
-          line-height: 24px;
-          padding: 0 6px;
+          margin: 5.333vw 0 0 0;
+          font-size: 4.267vw;
+          line-height: 6.4vw;
+          padding: 0 1.6vw;
           border: 1px solid #ffffff;
         }
         .item-title {
-          margin: 10px 0 0 0;
+          margin: 2.667vw 0 0 0;
           @include h4();
         }
       }
