@@ -56,8 +56,10 @@ window.onload = function () {
     scroll()
   });
 
+  appHeight()
 
   window.addEventListener("orientationchange", function() {
+    appHeight()
     observer()
     topBg()
     scroll()
