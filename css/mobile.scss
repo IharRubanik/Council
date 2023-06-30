@@ -99,6 +99,7 @@
       padding: 0 15px;
       position: relative;
       height: 100vh;
+      height: var(--app-height);
       width: 100%;
       .main-wrapper {
         position: absolute;

@@ -31,7 +31,7 @@
     border-radius: 0.521vw;
     font-size: 1.953vw;
     line-height: 100%;
-    max-height: 4.297vw;
+    max-height: 4.2vw;
   }
 
   ._container {
@@ -65,6 +65,7 @@
   .header-logo {
     top: 3.906vw;
     left: 3.906vw;
+    transition: .25s ease-out opacity;
     a {
       .logo {
         width: 11.198vw;
@@ -104,6 +105,7 @@
       padding: 0 3.906vw;
       position: relative;
       height: 100vh;
+      height: var(--app-height);
       width: 100%;
       .main-wrapper {
         position: absolute;
@@ -160,6 +162,7 @@
         left: 0;
         .manifesto-bg {
           height: 100vh;
+          height: var(--app-height);
           object-position: top;
         }
       }

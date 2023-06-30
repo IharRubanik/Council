@@ -29,6 +29,11 @@
   font-weight: 700;
   font-style: normal;
 }
+
+:root {
+  --app-height: 100%;
+}
+
 @mixin h2 {
   font-family: "Bebas Neue";
   font-style: normal;
@@ -228,6 +233,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
+  height: var(--app-height);
   z-index: 1;
   transition: 0.25s ease-out opacity;
   .main-bg {
@@ -236,6 +242,7 @@ body {
     top: 0;
     width: 100%;
     height: 100vh;
+    height: var(--app-height);
     object-fit: cover;
     z-index: 0;
   }
@@ -321,10 +328,12 @@ body {
 }
 .manifesto {
   margin: 100vh 0 0 0;
+  margin: var(--app-height) 0 0 0;
   position: relative;
   width: 100%;
   height: 1150vh;
   overflow-y: visible;
+  z-index: 6;
 
   .bg-container {
     position: absolute;
@@ -337,6 +346,7 @@ body {
       position: sticky;
       width: 100%;
       height: 100vh;
+      height: var(--app-height);
       top: 0;
       left: 0;
       .manifesto-bg {
@@ -357,12 +367,14 @@ body {
     padding: 125vh 0 0 0;
     position: relative;
     height: 100vh;
+    height: var(--app-height);
     z-index: 3;
     @include h2();
   }
   .manifesto-text {
     position: relative;
     height: 100vh;
+    height: var(--app-height);
     z-index: 3;
     h3 {
       @include h3();
@@ -420,6 +432,7 @@ body {
     position: sticky;
     top: 0;
     height: calc(100vh - 9.375vw);
+    height: calc(var(--app-height) - 9.375vw);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

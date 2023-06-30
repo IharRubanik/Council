@@ -12,6 +12,9 @@ window.onload = function () {
     (header = document.querySelector(".header")),
     (blurMenu = document.querySelector(".blur")),
     (body = document.querySelector("body")),
+    (roadmapTitle = document.querySelector(".roadmap-title")),
+    (manifestoText = document.querySelector("#manifesto-text")),
+    (headerLogo = document.querySelector(".header-logo")),
     (topMargin = manifestBg.clientHeight - screenHeight);
 
   const mediaQuery860 = window.matchMedia("only screen and (max-width: 860px)");
@@ -19,7 +22,7 @@ window.onload = function () {
 
   if (mediaQuery860.matches) {
     manifestBg.src = "./img/manifesto/manifesto-bg768.png";
-    manifestoContainer.style.height = manifesto.clientHeight + "px";
+    manifestoContainer.style.height = manifesto.clientHeight + 500 + "px";
   }
 
   // burger menu
@@ -38,8 +41,18 @@ window.onload = function () {
     }, 250);
   });
 
+
+  const appHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+}
+
+window.addEventListener('resize', appHeight)
+appHeight()
+
   // resize
   window.addEventListener("resize", function () {
+    // appHeight()
     topBg();
   });
 
@@ -57,41 +70,8 @@ window.onload = function () {
       ? document.documentElement.scrollTop
       : document.body.scrollTop;
 
-    if (mediaQuery860.matches) {
-      if (scrollTop >= screenHeight) {
-        main.classList.add("opacity");
-      } else {
-        main.classList.remove("opacity");
-      }
-      if (scrollTop >= screenHeight * 1.25) {
-        manifestBg.classList.add("blend");
-      } else {
-        manifestBg.classList.remove("blend");
-      }
-      if (scrollTop >= screenHeight * 6) {
-        manifestBg.classList.add("opacity");
-        sparksContainer.style.opacity = "1";
-        sparksContainer.style.transition = "1s ease-out opacity";
-      } else {
-        manifestBg.classList.remove("opacity");
-        sparksContainer.style.opacity = "0";
-        sparksContainer.style.transition = "0s";
-      }
-    }
-    if (mediaQuery600.matches) {
-      console.log(scrollTop)
-      if (scrollTop >= 8200) {
-        manifestBg.classList.add("opacity");
-        sparksContainer.style.opacity = "1";
-        sparksContainer.style.transition = "1s ease-out opacity";
-      } else {
-        manifestBg.classList.remove("opacity");
-        sparksContainer.style.opacity = "0";
-        sparksContainer.style.transition = "0s";
-      }
-    }
 
-    if (!mediaQuery860.matches || !mediaQuery600.matches ) {
+    // if (!mediaQuery860.matches || !mediaQuery600.matches) {
       if (scrollTop >= screenHeight * 1.25) {
         main.classList.add("opacity");
       } else {
@@ -102,7 +82,25 @@ window.onload = function () {
       } else {
         manifestBg.classList.remove("blend");
       }
-      if (scrollTop >= screenHeight * 11.5) {
+
+
+
+ if (mediaQuery860.matches || mediaQuery600.matches) {
+  if (scrollTop >= screenHeight * 1.25) {
+    headerLogo.style.opacity = '0'
+  }
+  else{
+    headerLogo.style.opacity = '1'
+  }
+ }
+
+
+
+  };
+
+  let observerRoadmap = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
         manifestBg.classList.add("opacity");
         sparksContainer.style.opacity = "1";
         sparksContainer.style.transition = "1s ease-out opacity";
@@ -111,6 +109,9 @@ window.onload = function () {
         sparksContainer.style.opacity = "0";
         sparksContainer.style.transition = "0s";
       }
-    }
-  };
+    });
+  }, {});
+
+  observerRoadmap.observe(roadmap);
+  // observer.observe(manifestoText);
 };
