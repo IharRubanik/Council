@@ -658,3 +658,36 @@ body {
     }
   }
 }
+
+@media only screen and (max-width: 600px) and (min-aspect-ratio: 375 / 573) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    &::after {
+      content: '' ;
+      width: 25vw;
+      height: 25vw;
+      background-image: url(../img/tel.svg);
+      background-size: 100% 100%;
+      animation: tel 2s ease-in-out infinite;
+    }
+    .wrapper {
+      display: none;
+    }
+  }
+
+  @keyframes tel {
+    0%{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(-45deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+    
+  }
+}

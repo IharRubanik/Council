@@ -640,4 +640,35 @@ body {
 }
 .roadmap .roadmap_item-container .roadmap_item.item3::before {
   background-image: url("../img/roadmap/mask3.png");
+}
+
+@media only screen and (max-width: 600px) and (min-aspect-ratio: 375/573) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  body::after {
+    content: "";
+    width: 25vw;
+    height: 25vw;
+    background-image: url(../img/tel.svg);
+    background-size: 100% 100%;
+    animation: tel 2s ease-in-out infinite;
+  }
+  body .wrapper {
+    display: none;
+  }
+  @keyframes tel {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 }/*# sourceMappingURL=laptop.css.map */
