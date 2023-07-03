@@ -34,6 +34,30 @@
     max-height: 4.1vw;
   }
 
+  .preloader {
+    .rpeloader-bg{
+      object-position: 75% 50%;
+    }
+    .logo {
+      width: 11.198vw;
+      top: 3.906vw;
+      left: 3.906vw;
+    }
+    .number-container {
+      bottom: 3.906vw;
+      left: 3.906vw;
+      gap: 1.953vw;
+      .number {
+        font-size: 10.156vw;
+      }
+      .loading {
+        font-size: 2.604vw;
+        line-height: 3.646vw;
+      }
+    }
+  }
+
+
   ._container {
     padding: 0 3.906vw;
   }

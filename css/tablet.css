@@ -1,4 +1,22 @@
 @media only screen and (max-width: 1280px) and (max-aspect-ratio: 1024/695) {
+  .preloader .logo {
+    width: 8.398vw;
+    top: 2.93vw;
+    left: 2.93vw;
+  }
+  .preloader .number-container {
+    bottom: 2.93vw;
+    left: 2.93vw;
+    gap: 1.465vw;
+  }
+  .preloader .number-container .number {
+    font-size: 7.617vw;
+  }
+  .preloader .number-container .loading {
+    padding: 0 0 7.5% 0;
+    font-size: 1.953vw;
+    line-height: 2.734vw;
+  }
   ._container {
     width: 100%;
     margin: 0;

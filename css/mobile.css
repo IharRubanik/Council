@@ -1,4 +1,25 @@
 @media only screen and (max-width: 600px) {
+  .preloader .rpeloader-bg {
+    -o-object-position: 70% 50%;
+       object-position: 70% 50%;
+  }
+  .preloader .logo {
+    width: 22.933vw;
+    top: 6.667vw;
+    left: 4vw;
+  }
+  .preloader .number-container {
+    bottom: 6.667vw;
+    left: 4vw;
+    gap: 4vw;
+  }
+  .preloader .number-container .number {
+    font-size: 20.8vw;
+  }
+  .preloader .number-container .loading {
+    font-size: 5.333vw;
+    line-height: 7.467vw;
+  }
   ._container {
     padding: 0 4vw;
   }

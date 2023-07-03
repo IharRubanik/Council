@@ -34,6 +34,27 @@
     max-height: 3.1vw;
   }
 
+  .preloader {
+    .logo {
+      width: 8.398vw;
+      top: 2.93vw;
+      left: 2.93vw;
+    }
+    .number-container {
+      bottom: 2.93vw;
+      left: 2.93vw;
+      gap: 1.465vw;
+      .number {
+        font-size: 7.617vw;
+      }
+      .loading {
+        padding: 0 0 7.5% 0;
+        font-size: 1.953vw;
+        line-height: 2.734vw;
+      }
+    }
+  }
+
   ._container {
     width: 100%;
     margin: 0;
@@ -99,10 +120,10 @@
     background: rgba(20, 19, 19, 0.7);
     z-index: -1;
     backdrop-filter: blur(0.391vw);
-    transition: .25s ease-out opacity, .25s ease-out height;
+    transition: 0.25s ease-out opacity, 0.25s ease-out height;
     opacity: 0;
-    &.active{
-        opacity: 1;
+    &.active {
+      opacity: 1;
     }
   }
   .header-logo {
@@ -123,7 +144,7 @@
     height: var(--app-height);
     display: flex;
     justify-content: flex-end;
-    transition: 0.25s ease-out transform, .25s ease-out height;
+    transition: 0.25s ease-out transform, 0.25s ease-out height;
     transform: translateX(100%);
     &.active {
       transform: translateX(0);
@@ -218,7 +239,7 @@
         width: 100%;
         height: 100vh;
         height: var(--app-height);
-        transition: .25s ease-out height;
+        transition: 0.25s ease-out height;
         top: 0;
         left: 0;
         .manifesto-bg {
@@ -287,7 +308,7 @@
       padding: 7.813vw 0 0 0;
       height: calc(100vh - 7.813vw);
       height: calc(var(--app-height) - 7.813vw);
-      transition: .25s ease-out height;
+      transition: 0.25s ease-out height;
       gap: 3.906vw;
       .roadmap-title {
         @include h2();
