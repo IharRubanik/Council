@@ -35,7 +35,7 @@
   }
 
   .preloader {
-    .rpeloader-bg{
+    .rpeloader-bg {
       object-position: 75% 50%;
     }
     .logo {
@@ -56,7 +56,6 @@
       }
     }
   }
-
 
   ._container {
     padding: 0 3.906vw;
@@ -89,7 +88,7 @@
   .header-logo {
     top: 3.906vw;
     left: 3.906vw;
-    transition: .25s ease-out opacity;
+    transition: 0.25s ease-out opacity;
     a {
       .logo {
         width: 11.198vw;
@@ -122,7 +121,7 @@
     }
   }
   .main {
-    .main-bg{
+    .main-bg {
       object-position: 75% 50%;
     }
     .main_container {
@@ -130,7 +129,7 @@
       position: relative;
       height: 100vh;
       height: var(--app-height);
-      transition: .25s ease-out height;
+      transition: 0.25s ease-out height;
       width: 100%;
       .main-wrapper {
         position: absolute;
@@ -181,14 +180,14 @@
     flex-direction: column;
     gap: 31.25vw;
     .bg-container {
- 
       .bg-container2 {
         top: 0 !important;
         left: 0;
         .manifesto-bg {
           height: 100vh;
           height: var(--app-height);
-          transition: 0.25s ease-out filter, 0.25s ease-out opacity, 0.25s ease-out height;
+          transition: 0.25s ease-out filter, 0.25s ease-out opacity,
+            0.25s ease-out height;
           object-position: top;
           &.opacity {
             opacity: 0;
@@ -249,7 +248,6 @@
       left: 0;
       .sparks {
         width: 100%;
-      
       }
     }
     .left-block {
@@ -258,14 +256,14 @@
       position: static;
       justify-content: flex-start;
       height: auto;
-      .roadmap-title { 
+      .roadmap-title {
         text-align: start;
         margin: 0;
         @include h2();
       }
       .social {
         position: absolute;
-        bottom: 13.021vw;
+        bottom: 18.49vw;
         left: 50%;
         transform: translateX(-50%);
         flex-direction: row;
@@ -281,14 +279,26 @@
           @include social();
         }
       }
-      .reserved {
+      .footer-text {
         position: absolute;
         bottom: 6.51vw;
         left: 50%;
         transform: translateX(-50%);
-        margin: 0;
-        font-size: 2.083vw;
-        line-height: 3.255vw;
+        align-items: center;
+        .reserved {
+          font-size: 2.083vw;
+          line-height: 3.255vw;
+        }
+        .powered {
+          margin: 0;
+          gap: 0.781vw;
+          font-size: 2.083vw;
+          a {
+            svg {
+              width: 14.063vw;
+            }
+          }
+        }
       }
     }
     .roadmap_item-container {

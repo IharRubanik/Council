@@ -196,7 +196,7 @@
         @include h2();
       }
       .social {
-        bottom: 24.8vw;
+        bottom: 36vw;
         gap: 3.2vw;
         a {
           svg {
@@ -206,12 +206,29 @@
           @include social();
         }
       }
-      .reserved {
-        bottom: 11.467vw;
-        width: max-content;
-        font-size: 4.267vw;
-        line-height: 6.667vw;
+
+      .footer-text{
+        .reserved {
+          bottom: 11.467vw;
+          width: max-content;
+          font-size: 4.267vw;
+          line-height: 6.667vw;
+        }
+        .powered {
+          margin: 0;
+          gap: 1.6vw;
+          font-size: 4.267vw;
+          a {
+            svg {
+              width: 28.8vw;
+            }
+          }
+        }
       }
+ 
+
+
+
     }
     .roadmap_item-container {
       gap: 8vw;

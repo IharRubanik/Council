@@ -162,7 +162,7 @@
     font-size: 24vw;
   }
   .roadmap .left-block .social {
-    bottom: 24.8vw;
+    bottom: 36vw;
     gap: 3.2vw;
   }
   .roadmap .left-block .social a {
@@ -173,12 +173,20 @@
     width: 4.8vw;
     height: auto;
   }
-  .roadmap .left-block .reserved {
+  .roadmap .left-block .footer-text .reserved {
     bottom: 11.467vw;
     width: -moz-max-content;
     width: max-content;
     font-size: 4.267vw;
     line-height: 6.667vw;
+  }
+  .roadmap .left-block .footer-text .powered {
+    margin: 0;
+    gap: 1.6vw;
+    font-size: 4.267vw;
+  }
+  .roadmap .left-block .footer-text .powered a svg {
+    width: 28.8vw;
   }
   .roadmap .roadmap_item-container {
     gap: 8vw;

@@ -326,10 +326,23 @@
           @include social();
         }
       }
-      .reserved {
-        margin: 0 0 3.906vw 0;
-        font-size: 1.563vw;
-        line-height: 2.441vw;
+
+      .footer-text {
+        gap: 21px;
+        .reserved {
+          font-size: 1.563vw;
+          line-height: 2.441vw;
+        }
+        .powered {
+          margin: 0 0 4.883vw 0;
+          gap: 0.586vw;
+          font-size: 1.563vw;
+          a {
+            svg {
+              width: 10.547vw;
+            }
+          }
+        }
       }
     }
     .roadmap_item-container {

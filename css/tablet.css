@@ -296,10 +296,20 @@
   .roadmap .left-block .social a svg path {
     transition: 0.25s ease-out fill;
   }
-  .roadmap .left-block .reserved {
-    margin: 0 0 3.906vw 0;
+  .roadmap .left-block .footer-text {
+    gap: 21px;
+  }
+  .roadmap .left-block .footer-text .reserved {
     font-size: 1.563vw;
     line-height: 2.441vw;
+  }
+  .roadmap .left-block .footer-text .powered {
+    margin: 0 0 4.883vw 0;
+    gap: 0.586vw;
+    font-size: 1.563vw;
+  }
+  .roadmap .left-block .footer-text .powered a svg {
+    width: 10.547vw;
   }
   .roadmap .roadmap_item-container {
     gap: 2.93vw;

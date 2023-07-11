@@ -49,6 +49,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .preloader {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -534,13 +535,42 @@ body::-webkit-scrollbar-thumb {
 .roadmap .left-block .social a:hover svg path {
   fill: #ffffff;
 }
-.roadmap .left-block .reserved {
+.roadmap .left-block .footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.roadmap .left-block .footer-text .reserved {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 0.938vw;
   line-height: 1.458vw;
   color: #ffffff;
+}
+.roadmap .left-block .footer-text .powered {
+  display: flex;
+  gap: 0.313vw;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #ffffff;
+}
+.roadmap .left-block .footer-text .powered a {
+  transform: translateY(10%);
+  text-decoration: none;
+}
+.roadmap .left-block .footer-text .powered a svg {
+  width: 5.625vw;
+  height: auto;
+}
+.roadmap .left-block .footer-text .powered a svg path {
+  transition: 0.25s ease-out fill;
+}
+.roadmap .left-block .footer-text .powered a:hover svg path {
+  fill: #ea5f1b;
 }
 .roadmap .roadmap_item-container {
   display: flex;

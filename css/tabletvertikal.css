@@ -230,7 +230,7 @@
   }
   .roadmap .left-block .social {
     position: absolute;
-    bottom: 13.021vw;
+    bottom: 18.49vw;
     left: 50%;
     transform: translateX(-50%);
     flex-direction: row;
@@ -247,14 +247,24 @@
   .roadmap .left-block .social a svg path {
     transition: 0.25s ease-out fill;
   }
-  .roadmap .left-block .reserved {
+  .roadmap .left-block .footer-text {
     position: absolute;
     bottom: 6.51vw;
     left: 50%;
     transform: translateX(-50%);
-    margin: 0;
+    align-items: center;
+  }
+  .roadmap .left-block .footer-text .reserved {
     font-size: 2.083vw;
     line-height: 3.255vw;
+  }
+  .roadmap .left-block .footer-text .powered {
+    margin: 0;
+    gap: 0.781vw;
+    font-size: 2.083vw;
+  }
+  .roadmap .left-block .footer-text .powered a svg {
+    width: 14.063vw;
   }
   .roadmap .roadmap_item-container {
     gap: 3.906vw;

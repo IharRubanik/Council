@@ -147,6 +147,7 @@ body {
   }
 }
 .preloader {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -154,7 +155,7 @@ body {
   height: 100vh;
   height: var(--app-height);
   z-index: 100;
-  transition: .5s ease-out opacity;
+  transition: 0.5s ease-out opacity;
   opacity: 1;
   .rpeloader-bg {
     width: 100%;
@@ -183,7 +184,7 @@ body {
       color: #ffffff;
     }
     .loading {
-      padding: 0  0 9.5% 0;
+      padding: 0 0 9.5% 0;
       font-size: 1.25vw;
       font-family: Roboto;
       font-style: normal;
@@ -192,7 +193,7 @@ body {
       color: #ffffff;
     }
   }
-  &.none{
+  &.none {
     opacity: 0;
   }
 }
@@ -538,16 +539,48 @@ body {
         @include social();
       }
     }
-    .reserved {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 0.938vw;
-      line-height: 1.458vw;
-      color: #ffffff;
+    .footer-text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .reserved {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.938vw;
+        line-height: 1.458vw;
+        color: #ffffff;
+      }
+      .powered {
+        display: flex;
+        gap: 0.313vw;
+        font-family: "Roboto";
+        font-size: 0.833vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        color: #ffffff;
+        a {
+          transform: translateY(10%);
+          text-decoration: none;
+          svg {
+            width: 5.625vw;
+            height: auto;
+            path {
+              transition: 0.25s ease-out fill;
+            }
+          }
+          &:hover {
+            svg {
+              path {
+                fill: #ea5f1b;
+              }
+            }
+          }
+        }
+      }
     }
   }
-
   .roadmap_item-container {
     display: flex;
     flex-direction: column;
