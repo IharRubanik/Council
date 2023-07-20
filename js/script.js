@@ -1,7 +1,7 @@
 window.onload = function () {
   let screenHeight = window.innerHeight,
     main = document.querySelector(".main"),
-  manifestBg = document.querySelector(".manifesto-bg"),
+    manifestBg = document.querySelector(".manifesto-bg"),
     manifesto = document.querySelector(".manifesto"),
     manifestoContainer = document.querySelector(".bg-container"),
     roadmap = document.querySelector(".roadmap"),
@@ -14,7 +14,6 @@ window.onload = function () {
     blurMenu = document.querySelector(".blur"),
     body = document.querySelector("body"),
     headerLogo = document.querySelector(".header-logo");
-
 
   const mediaQuery860 = window.matchMedia("only screen and (max-width: 860px)");
   const mediaQuery600 = window.matchMedia("only screen and (max-width: 600px)");
@@ -45,25 +44,26 @@ window.onload = function () {
     doc.style.setProperty("--app-height", `${window.innerHeight}px`);
   };
 
-  // window.addEventListener("resize", appHeight);
-  // appHeight()
-
   // resize
   window.addEventListener("resize", function () {
-    appHeight()
-    observer()
-    topBg()
-    scroll()
+    appHeight();
+    observer();
+    topBg();
+    scroll();
   });
 
-  appHeight()
+  appHeight();
 
-  window.addEventListener("orientationchange", function() {
-    appHeight()
-    observer()
-    topBg()
-    scroll()
-}, false);
+  window.addEventListener(
+    "orientationchange",
+    function () {
+      appHeight();
+      observer();
+      topBg();
+      scroll();
+    },
+    false
+  );
 
   function topBg() {
     screenHeight = window.innerHeight;
@@ -72,34 +72,34 @@ window.onload = function () {
   }
   topBg();
   // scroll
-function scroll() {
-  window.onscroll = function () {
-    var scrollTop = window.pageYOffset
-      ? window.pageYOffset
-      : document.documentElement.scrollTop
-      ? document.documentElement.scrollTop
-      : document.body.scrollTop;
-    if (scrollTop >= screenHeight * 1.25) {
-      main.classList.add("opacity");
-    } else {
-      main.classList.remove("opacity");
-    }
-    if (scrollTop >= screenHeight * 2) {
-      manifestBg.classList.add("blend");
-    } else {
-      manifestBg.classList.remove("blend");
-    }
-
-    if (mediaQuery860.matches || mediaQuery600.matches) {
+  function scroll() {
+    window.onscroll = function () {
+      var scrollTop = window.pageYOffset
+        ? window.pageYOffset
+        : document.documentElement.scrollTop
+        ? document.documentElement.scrollTop
+        : document.body.scrollTop;
       if (scrollTop >= screenHeight * 1.25) {
-        headerLogo.style.opacity = "0";
+        main.classList.add("opacity");
       } else {
-        headerLogo.style.opacity = "1";
+        main.classList.remove("opacity");
       }
-    }
-  };
-}
-scroll()
+      if (scrollTop >= screenHeight * 2) {
+        manifestBg.classList.add("blend");
+      } else {
+        manifestBg.classList.remove("blend");
+      }
+
+      if (mediaQuery860.matches || mediaQuery600.matches) {
+        if (scrollTop >= screenHeight * 1.25) {
+          headerLogo.style.opacity = "0";
+        } else {
+          headerLogo.style.opacity = "1";
+        }
+      }
+    };
+  }
+  scroll();
 
   function observer() {
     let observerRoadmap = new IntersectionObserver((entries, observer) => {
@@ -112,7 +112,6 @@ scroll()
           manifestBg.classList.add("opacity");
           sparksContainer.style.opacity = "1";
           sparksContainer.style.transition = "1s ease-out opacity";
-          
         } else {
           bgContainer.style.display = "block";
           setTimeout(() => {
@@ -121,12 +120,11 @@ scroll()
             sparksContainer.style.transition = "0s";
             sparksContainer.style.display = "none";
           }, 100);
-       
         }
       });
     }, {});
-  
+
     observerRoadmap.observe(roadmap);
   }
-  observer()
+  observer();
 };
