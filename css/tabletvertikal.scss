@@ -348,4 +348,128 @@
       }
     }
   }
+
+
+
+
+ // mint
+ @mixin mint-title {
+  font-size: 10.156vw;
+}
+@mixin mint-subtitle {
+  font-size: 4.948vw;
+}
+@mixin text-oval {
+  font-size: 2.083vw;
+  line-height: 3.125vw;
+  border-radius: 5.729vw;
+  border: 1px solid #fff;
+}
+
+.mint {
+  height: 100vh;
+  height: var(--app-height);
+  .preview-mint {
+    .preview-container {
+      .people {
+        width: 90.104vw;
+        filter: blur(0.521vw);
+        &:nth-child(1) {
+          display: none;
+        }
+        &:nth-child(2) {
+          left: -51.172vw;
+        }
+        &:nth-child(3) {
+           right: -46.484vw;
+        }
+        &:nth-child(4) {
+         display: none;
+        }
+      }
+      .preview-bg {
+        width: 215%;
+      }
+      .initiate {
+        bottom: 19.661vw;
+        width: 62.76vw;
+        height: 62.76vw;
+      }
+    }
+  }
+  .mint-bg {
+    width: 200%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .mint-title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 12.5vw 0 0 3.906vw;
+    @include mint-title();
+  }
+  .circl-number {
+    width: 6.51vw;
+    height: 6.51vw;
+    margin: 14.323vw 0 0 25.391vw;
+    span {
+      font-size: 2.344vw;
+    }
+  }
+  .mint-subtitle {
+    margin: 1.953vw 0 0 25.391vw;
+    @include mint-subtitle();
+  }
+  .text-oval {
+    padding: 0 0.781vw;
+    margin: 1.042vw 0 0 25.391vw;
+    @include text-oval();
+  }
+  .nft-container {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: auto;
+    top: 39.714vw;
+    width: 52.474vw;
+    padding: 1.432vw;
+    .img-container {
+      height: 60.286vw;
+    }
+    .change {
+      .change-bg {
+        width: 14.063vw;
+        height: 14.063vw;
+      }
+      .circle {
+        width: 9.505vw;
+        height: 9.505vw;
+        box-shadow: 0vw 0vw 3.255vw 0vw rgba(234, 95, 27, 0.5) inset;
+        .time {
+          font-size: 2.604vw;
+        }
+        svg {
+          width: 4.297vw;
+        }
+      }
+    }
+    .mint-nft {
+      @include button();
+      max-height: 6.25vw;
+      margin: -5.859vw 0 0 0;
+      width: 52.474vw;
+      transform: translateX(-1.432vw);
+    
+    }
+  }
+}
+@media  (min-aspect-ratio: 768 / 900) {
+  .mint{
+   
+    height: 1024px !important;
+  }
+}
+
+
 }

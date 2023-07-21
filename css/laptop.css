@@ -538,7 +538,7 @@ body::-webkit-scrollbar-thumb {
 .roadmap .left-block .footer-text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.042vw;
 }
 .roadmap .left-block .footer-text .reserved {
   font-family: "Roboto";
@@ -758,6 +758,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100vh;
   height: var(--app-height);
+  transition: 0.15s linear height;
 }
 .mint .preview-mint {
   position: absolute;
@@ -775,28 +776,28 @@ body::-webkit-scrollbar-thumb {
 }
 .mint .preview-mint .preview-container .people {
   position: absolute;
-  width: 687px;
+  width: 35.781vw;
   height: auto;
   z-index: 4;
   bottom: 0;
   transition: 2.5s ease-in-out transform;
-  filter: blur(4px);
+  filter: blur(0.208vw);
 }
 .mint .preview-mint .preview-container .people:nth-child(1) {
   right: auto;
-  left: -264px;
+  left: -13.75vw;
 }
 .mint .preview-mint .preview-container .people:nth-child(2) {
   right: auto;
-  left: 123px;
+  left: 6.406vw;
 }
 .mint .preview-mint .preview-container .people:nth-child(3) {
   left: auto;
-  right: 164px;
+  right: 8.542vw;
 }
 .mint .preview-mint .preview-container .people:nth-child(4) {
   left: auto;
-  right: -223px;
+  right: -11.615vw;
 }
 .mint .preview-mint .preview-container .preview-bg {
   width: 100%;
@@ -809,11 +810,11 @@ body::-webkit-scrollbar-thumb {
   padding: 0;
   position: absolute;
   left: 50%;
-  bottom: 164px;
+  bottom: 8.542vw;
   transform: translateX(-50%);
   z-index: 4;
-  width: 576px;
-  height: 576px;
+  width: 30vw;
+  height: 30vw;
 }
 .mint .preview-mint .preview-container .initiate .initiate-container {
   position: relative;
@@ -873,9 +874,9 @@ body::-webkit-scrollbar-thumb {
   transition: 2.5s ease-out opacity;
 }
 .mint .mint-title {
-  margin: 132px 0 0 60px;
+  margin: 6.875vw 0 0 3.125vw;
   font-family: "Bebas Neue";
-  font-size: 120px;
+  font-size: 6.25vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -885,28 +886,28 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 55px;
-  height: 55px;
+  width: 2.865vw;
+  height: 2.865vw;
   background-image: url(../img/mint/round.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  margin: 17px 0 0 60px;
+  margin: 0.885vw 0 0 3.125vw;
   transition: 2.5s ease-out opacity;
 }
 .mint .circl-number span {
   color: #ea5f1b;
   font-family: "Roboto";
-  font-size: 20px;
+  font-size: 1.042vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
 }
 .mint .mint-subtitle {
-  margin: 21px 0 0 60px;
+  margin: 1.094vw 0 0 3.125vw;
   transition: 2.5s ease-out opacity;
   font-family: "Bebas Neue";
-  font-size: 48px;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -914,36 +915,37 @@ body::-webkit-scrollbar-thumb {
 }
 .mint .text-oval {
   display: flex;
-  padding: 0 10px;
-  margin: 9px 0 0 60px;
+  padding: 0 0.521vw;
+  margin: 0.469vw 0 0 3.125vw;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 2.5s ease-out opacity;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 0.938vw;
   font-style: normal;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.458vw;
   color: #ffffff;
   width: -moz-max-content;
   width: max-content;
-  border-radius: 100px;
+  border-radius: 5.208vw;
   border: 1px solid #fff;
 }
 .mint .nft-container {
+  box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 530px;
-  padding: 15px;
+  width: 27.604vw;
+  padding: 0.781vw;
   transition: 2.5s ease-out opacity;
 }
 .mint .nft-container .img-container {
   position: relative;
   width: 100%;
-  height: 608px;
+  height: 31.667vw;
   overflow: hidden;
 }
 .mint .nft-container .img-container .mask {
@@ -981,18 +983,18 @@ body::-webkit-scrollbar-thumb {
   z-index: 2;
 }
 .mint .nft-container .change .change-bg {
-  width: 142px;
-  height: 142px;
+  width: 7.396vw;
+  height: 7.396vw;
 }
 .mint .nft-container .change .circle {
   position: absolute;
   left: 50%;
   top: 49.5%;
   transform: translate(-50%, -50%) scale(1);
-  width: 96px;
-  height: 96px;
+  width: 5vw;
+  height: 5vw;
   background: #fff;
-  box-shadow: 0px 0px 25px 0px rgba(234, 95, 27, 0.5) inset;
+  box-shadow: 0vw 0vw 1.302vw 0vw rgba(234, 95, 27, 0.5) inset;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -1003,14 +1005,14 @@ body::-webkit-scrollbar-thumb {
   display: none;
   color: #fff;
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 1.354vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
 }
 .mint .nft-container .change .circle svg {
-  width: 44px;
+  width: 2.292vw;
   height: auto;
 }
 .mint .nft-container .change .circle svg path {
@@ -1059,8 +1061,8 @@ body::-webkit-scrollbar-thumb {
   border: none;
   overflow: hidden;
   width: 100%;
-  max-height: 54px;
-  margin: -60px 0 0 0;
+  max-height: 2.813vw;
+  margin: -3.125vw 0 0 0;
 }
 .mint .nft-container .mint-nft span {
   transition: 0.25s ease-out transform;

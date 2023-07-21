@@ -391,4 +391,145 @@
       }
     }
   }
+
+  // mint
+  @mixin mint-title {
+    font-size: 7.617vw;
+  }
+  @mixin mint-subtitle {
+    font-size: 3.711vw;
+  }
+  @mixin text-oval {
+    font-size: 1.563vw;
+    line-height: 2.344vw;
+    border-radius: 4.297vw;
+    border: 1px solid #fff;
+  }
+
+  .mint {
+    height: 100vh;
+    height: var(--app-height);
+    .preview-mint {
+      .preview-container {
+        .people {
+          width: 43.164vw;
+          filter: blur(0.293vw);
+          &:nth-child(1) {
+            left: -26.563vw;
+          }
+          &:nth-child(2) {
+            left: -2.246vw;
+          }
+          &:nth-child(3) {
+            right: 0.391vw;
+          }
+          &:nth-child(4) {
+            right: -24.414vw;
+          }
+        }
+        .preview-bg {
+          width: 120%;
+        }
+        .initiate {
+          bottom: 11.035vw;
+          z-index: 4;
+          width: 35.547vw;
+          height: 35.547vw;
+        }
+      }
+    }
+    .mint-bg {
+      width: 133%;
+    }
+    .mint-title {
+      margin: 10.742vw 0 0 2.93vw;
+      @include mint-title();
+    }
+    .circl-number {
+      width: 4.883vw;
+      height: 4.883vw;
+      margin: 3.906vw 0 0 2.93vw;
+
+      span {
+        font-size: 1.758vw;
+      }
+    }
+    .mint-subtitle {
+      margin: 1.563vw 0 0 2.93vw;
+      @include mint-subtitle();
+    }
+    .text-oval {
+      padding: 0 0.586vw;
+      margin: 0.781vw 0 0 2.93vw;
+      @include text-oval();
+    }
+    .nft-container {
+      top: auto;
+      left: auto;
+      right: 14.453vw;
+      bottom: 6.934vw ;
+      transform: none;
+      width: 39.355vw;
+      padding: 1.074vw;
+      .img-container {
+        height: 45.215vw;
+      }
+      .change {
+        .change-bg {
+          width: 10.547vw;
+          height: 10.547vw;
+        }
+        .circle {
+          width: 7.129vw;
+          height: 7.129vw;
+          box-shadow: 0vw 0vw 2.441vw 0vw rgba(234, 95, 27, 0.5) inset;
+          .time {
+            font-size: 1.953vw;
+          }
+          svg {
+            width: 3.223vw;
+          }
+        }
+        &:hover {
+          .circle {
+            transform: translate(-50%, -50%) scale(1);
+            background: white;
+            svg {
+              transform: scale(1);
+              path {
+                fill: #ea5f1b;
+              }
+            }
+          }
+        }
+        &.timer{
+          &:hover{
+            .circle{
+              transform: translate(-50%, -50%) scale(.9);
+              background: #141313;
+            }
+          }
+        }
+      }
+      .mint-nft {
+        @include button();
+        max-height: 4.688vw;
+        margin: -4.395vw 0 0 0;
+        width: 39.355vw;
+        transform: translateX(-1.074vw);
+        span {
+          &:last-child {
+            transform: translateY(150%);
+          }
+        }
+        &:hover {
+          span {
+            &:first-child {
+              transform: translateY(-140%);
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -355,4 +355,118 @@
   .roadmap .roadmap_item-container .roadmap_item.blocked .status {
     justify-content: flex-end;
   }
+  .mint {
+    height: 100vh;
+    height: var(--app-height);
+  }
+  .mint .preview-mint .preview-container .people {
+    width: 43.164vw;
+    filter: blur(0.293vw);
+  }
+  .mint .preview-mint .preview-container .people:nth-child(1) {
+    left: -26.563vw;
+  }
+  .mint .preview-mint .preview-container .people:nth-child(2) {
+    left: -2.246vw;
+  }
+  .mint .preview-mint .preview-container .people:nth-child(3) {
+    right: 0.391vw;
+  }
+  .mint .preview-mint .preview-container .people:nth-child(4) {
+    right: -24.414vw;
+  }
+  .mint .preview-mint .preview-container .preview-bg {
+    width: 120%;
+  }
+  .mint .preview-mint .preview-container .initiate {
+    bottom: 11.035vw;
+    z-index: 4;
+    width: 35.547vw;
+    height: 35.547vw;
+  }
+  .mint .mint-bg {
+    width: 133%;
+  }
+  .mint .mint-title {
+    margin: 10.742vw 0 0 2.93vw;
+    font-size: 7.617vw;
+  }
+  .mint .circl-number {
+    width: 4.883vw;
+    height: 4.883vw;
+    margin: 3.906vw 0 0 2.93vw;
+  }
+  .mint .circl-number span {
+    font-size: 1.758vw;
+  }
+  .mint .mint-subtitle {
+    margin: 1.563vw 0 0 2.93vw;
+    font-size: 3.711vw;
+  }
+  .mint .text-oval {
+    padding: 0 0.586vw;
+    margin: 0.781vw 0 0 2.93vw;
+    font-size: 1.563vw;
+    line-height: 2.344vw;
+    border-radius: 4.297vw;
+    border: 1px solid #fff;
+  }
+  .mint .nft-container {
+    top: auto;
+    left: auto;
+    right: 14.453vw;
+    bottom: 6.934vw;
+    transform: none;
+    width: 39.355vw;
+    padding: 1.074vw;
+  }
+  .mint .nft-container .img-container {
+    height: 45.215vw;
+  }
+  .mint .nft-container .change .change-bg {
+    width: 10.547vw;
+    height: 10.547vw;
+  }
+  .mint .nft-container .change .circle {
+    width: 7.129vw;
+    height: 7.129vw;
+    box-shadow: 0vw 0vw 2.441vw 0vw rgba(234, 95, 27, 0.5) inset;
+  }
+  .mint .nft-container .change .circle .time {
+    font-size: 1.953vw;
+  }
+  .mint .nft-container .change .circle svg {
+    width: 3.223vw;
+  }
+  .mint .nft-container .change:hover .circle {
+    transform: translate(-50%, -50%) scale(1);
+    background: white;
+  }
+  .mint .nft-container .change:hover .circle svg {
+    transform: scale(1);
+  }
+  .mint .nft-container .change:hover .circle svg path {
+    fill: #ea5f1b;
+  }
+  .mint .nft-container .change.timer:hover .circle {
+    transform: translate(-50%, -50%) scale(0.9);
+    background: #141313;
+  }
+  .mint .nft-container .mint-nft {
+    padding: 0.781vw 5.078vw;
+    border-radius: 0.391vw;
+    font-size: 1.465vw;
+    line-height: 100%;
+    max-height: 3.1vw;
+    max-height: 4.688vw;
+    margin: -4.395vw 0 0 0;
+    width: 39.355vw;
+    transform: translateX(-1.074vw);
+  }
+  .mint .nft-container .mint-nft span:last-child {
+    transform: translateY(150%);
+  }
+  .mint .nft-container .mint-nft:hover span:first-child {
+    transform: translateY(-140%);
+  }
 }/*# sourceMappingURL=tablet.css.map */

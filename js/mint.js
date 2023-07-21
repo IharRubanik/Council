@@ -1,14 +1,10 @@
 window.onload = function () {
-  let screenHeight = window.innerHeight,
-    burgerMenu = document.querySelector(".burger-menu"),
+  let burgerMenu = document.querySelector(".burger-menu"),
     closeMenu = document.querySelector(".close"),
     header = document.querySelector(".header"),
     blurMenu = document.querySelector(".blur"),
-    body = document.querySelector("body"),
-    headerLogo = document.querySelector(".header-logo");
+    body = document.querySelector("body");
 
-  const mediaQuery860 = window.matchMedia("only screen and (max-width: 860px)");
-  const mediaQuery600 = window.matchMedia("only screen and (max-width: 600px)");
 
   // burger menu
   burgerMenu.addEventListener("click", function () {

@@ -227,4 +227,85 @@
     margin: 2.667vw 0 0 0;
     font-size: 11.2vw;
   }
+  .mint {
+    height: 252.8vw !important;
+    height: 100vh;
+    height: var(--app-height);
+  }
+  .mint .preview-mint {
+    display: none;
+  }
+  .mint .preview-mint .preview-container .people {
+    display: none;
+  }
+  .mint .preview-mint .preview-container .preview-bg {
+    width: 343%;
+  }
+  .mint .preview-mint .preview-container .initiate {
+    bottom: 32vw;
+    width: 100vw;
+    height: 100vw;
+  }
+  .mint .mint-bg {
+    width: 415%;
+  }
+  .mint .mint-title {
+    position: static;
+    margin: 25.6vw 0 0 4vw;
+    font-size: 18.133vw;
+  }
+  .mint .circl-number {
+    width: 11.733vw;
+    height: 11.733vw;
+    margin: 5.333vw 0 0 4vw;
+  }
+  .mint .circl-number span {
+    font-size: 4.267vw;
+  }
+  .mint .mint-subtitle {
+    margin: 4vw 0 0 4vw;
+    font-size: 8.533vw;
+  }
+  .mint .text-oval {
+    padding: 0 1.6vw;
+    margin: 1.867vw 0 0 4vw;
+    font-size: 3.733vw;
+    line-height: 5.867vw;
+    border-radius: 11.733vw;
+    border: 1px solid #fff;
+  }
+  .mint .nft-container {
+    top: 92.8vw;
+    width: 92vw;
+    padding: 2.667vw;
+  }
+  .mint .nft-container .img-container {
+    height: 105.6vw;
+  }
+  .mint .nft-container .change .change-bg {
+    width: 24.533vw;
+    height: 24.533vw;
+  }
+  .mint .nft-container .change .circle {
+    width: 16.533vw;
+    height: 16.533vw;
+    box-shadow: 0vw 0vw 6.667vw 0vw rgba(234, 95, 27, 0.5) inset;
+  }
+  .mint .nft-container .change .circle .time {
+    font-size: 4.267vw;
+  }
+  .mint .nft-container .change .circle svg {
+    width: 7.467vw;
+  }
+  .mint .nft-container .mint-nft {
+    padding: 2.133vw 13.867vw;
+    border-radius: 1.067vw;
+    font-size: 4vw;
+    line-height: 100%;
+    max-height: 8.5vw;
+    max-height: 12.8vw;
+    margin: -9.333vw 0 0 0;
+    width: 92vw;
+    transform: translateX(-10px);
+  }
 }/*# sourceMappingURL=mobile.css.map */

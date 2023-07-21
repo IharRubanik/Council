@@ -542,7 +542,7 @@ body {
     .footer-text {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 1.042vw;
       .reserved {
         font-family: "Roboto";
         font-style: normal;
@@ -756,7 +756,7 @@ body {
 // mint
 @mixin mint-title {
   font-family: "Bebas Neue";
-  font-size: 120px;
+  font-size: 6.25vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -764,7 +764,7 @@ body {
 }
 @mixin mint-subtitle {
   font-family: "Bebas Neue";
-  font-size: 48px;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -772,13 +772,13 @@ body {
 }
 @mixin text-oval {
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 0.938vw;
   font-style: normal;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.458vw;
   color: #ffffff;
   width: max-content;
-  border-radius: 100px;
+  border-radius: 5.208vw;
   border: 1px solid #fff;
 }
 
@@ -806,6 +806,7 @@ body {
   width: 100%;
   height: 100vh;
   height: var(--app-height);
+  transition: .15s linear height;
   .preview-mint {
     position: absolute;
     width: 100%;
@@ -820,27 +821,27 @@ body {
       justify-content: center;
       .people {
         position: absolute;
-        width: 687px;
+        width: 35.781vw;
         height: auto;
         z-index: 4;
         bottom: 0;
         transition: 2.5s ease-in-out transform;
-        filter: blur(4px);
+        filter: blur(0.208vw);
         &:nth-child(1) {
           right: auto;
-          left: -264px;
+          left: -13.75vw;
         }
         &:nth-child(2) {
           right: auto;
-          left: 123px;
+          left: 6.406vw;
         }
         &:nth-child(3) {
           left: auto;
-          right: 164px;
+          right: 8.542vw;
         }
         &:nth-child(4) {
           left: auto;
-          right: -223px;
+          right: -11.615vw;
         }
       }
       .preview-bg {
@@ -854,11 +855,11 @@ body {
         padding: 0;
         position: absolute;
         left: 50%;
-        bottom: 164px;
+        bottom: 8.542vw;
         transform: translateX(-50%);
         z-index: 4;
-        width: 576px;
-        height: 576px;
+        width: 30vw;
+        height: 30vw;
         .initiate-container {
           position: relative;
           width: 100%;
@@ -933,24 +934,24 @@ body {
     transition: 2.5s ease-out opacity;
   }
   .mint-title {
-    margin: 132px 0 0 60px;
+    margin: 6.875vw 0 0 3.125vw;
     @include mint-title();
   }
   .circl-number {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 55px;
-    height: 55px;
+    width: 2.865vw;
+    height: 2.865vw;
     background-image: url(../img/mint/round.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin: 17px 0 0 60px;
+    margin: 0.885vw 0 0 3.125vw;
     transition: 2.5s ease-out opacity;
     span {
       color: #ea5f1b;
       font-family: "Roboto";
-      font-size: 20px;
+      font-size: 1.042vw;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -958,14 +959,14 @@ body {
     }
   }
   .mint-subtitle {
-    margin: 21px 0 0 60px;
+    margin: 1.094vw 0 0 3.125vw;
     transition: 2.5s ease-out opacity;
     @include mint-subtitle();
   }
   .text-oval {
     display: flex;
-    padding: 0 10px;
-    margin: 9px 0 0 60px;
+    padding: 0 0.521vw;
+    margin: 0.469vw 0 0 3.125vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -973,17 +974,18 @@ body {
     @include text-oval();
   }
   .nft-container {
+    box-sizing: border-box;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 530px;
-    padding: 15px;
+    width: 27.604vw;
+    padding: 0.781vw;
     transition: 2.5s ease-out opacity;
     .img-container {
       position: relative;
       width: 100%;
-      height: 608px;
+      height: 31.667vw;
       overflow: hidden;
       .mask {
         position: relative;
@@ -1021,18 +1023,18 @@ body {
       transform: translateY(-50%);
       z-index: 2;
       .change-bg {
-        width: 142px;
-        height: 142px;
+        width: 7.396vw;
+        height: 7.396vw;
       }
       .circle {
         position: absolute;
         left: 50%;
         top: 49.5%;
         transform: translate(-50%, -50%) scale(1);
-        width: 96px;
-        height: 96px;
+        width: 5vw;
+        height: 5vw;
         background: #fff;
-        box-shadow: 0px 0px 25px 0px rgba(234, 95, 27, 0.5) inset;
+        box-shadow: 0vw 0vw 1.302vw 0vw rgba(234, 95, 27, 0.5) inset;
         border-radius: 100%;
         display: flex;
         align-items: center;
@@ -1042,14 +1044,14 @@ body {
           display: none;
           color: #fff;
           font-family: "Roboto";
-          font-size: 16px;
+          font-size: 1.354vw;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
           text-transform: uppercase;
         }
         svg {
-          width: 44px;
+          width: 2.292vw;
           height: auto;
           path {
             transition: 0.25s ease-out fill, 0.25s ease-out transform;
@@ -1086,8 +1088,8 @@ body {
     .mint-nft {
       @include button();
       width: 100%;
-      max-height: 54px;
-      margin: -60px 0 0 0;
+      max-height: 2.813vw;
+      margin: -3.125vw 0 0 0;
       span {
         &:last-child {
           transform: translateY(130%);
