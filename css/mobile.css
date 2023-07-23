@@ -233,6 +233,7 @@
     height: var(--app-height);
   }
   .mint .preview-mint {
+    display: none;
   }
   .mint .preview-mint .preview-container .people {
     display: none;
