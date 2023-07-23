@@ -170,6 +170,7 @@ body {
     height: auto;
   }
   .number-container {
+    margin: 30px 0 0 0;
     position: absolute;
     bottom: 2.083vw;
     left: 3.125vw;
@@ -186,7 +187,7 @@ body {
     .loading {
       padding: 0 0 9.5% 0;
       font-size: 1.25vw;
-      font-family: Roboto;
+      font-family: "Roboto";
       font-style: normal;
       font-weight: 300;
       line-height: 1.771vw;
@@ -771,7 +772,7 @@ body {
   color: #ffffff;
 }
 @mixin text-oval {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 0.938vw;
   font-style: normal;
   font-weight: 700;
@@ -806,7 +807,7 @@ body {
   width: 100%;
   height: 100vh;
   height: var(--app-height);
-  transition: .15s linear height;
+  transition: 0.15s linear height;
   .preview-mint {
     position: absolute;
     width: 100%;
@@ -1122,6 +1123,124 @@ body {
     }
     .nft-container {
       opacity: 0;
+    }
+  }
+}
+
+// welcome
+.welcome {
+  position: relative;
+  height: 100vh;
+  height: var(--app-height);
+  overflow: hidden;
+  .welcome-title {
+    position: relative;
+    margin: 6.875vw 0 0 3.125vw;
+    z-index: 2;
+    @include h3();
+  }
+  .subtitle-container {
+    position: relative;
+    margin: 2.292vw 0 0 16.667vw;
+    display: flex;
+    gap: 38.698vw;
+    z-index: 2;
+    opacity: 0;
+    transition: 1s ease-in-out opacity;
+    &.active{
+      opacity: 1;
+      .subtitle{
+        transform: translateX(0%);
+      }
+    }
+    .subtitle {
+      color: #fff;
+      font-family: 'Bebas Neue';
+      font-size: 3.021vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      transform: translateX(-84%);
+      transition: 1s ease-in-out transform;
+      
+      span {
+        color: #ea5f1b;
+      }
+    }
+    .member-container {
+      display: flex;
+      flex-direction: column;
+      .member-title {
+        color: #fff;
+        font-family: 'Bebas Neue';
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .status {
+        margin: 0.104vw 0 0 0;
+        color: #fff;
+        font-family: "Roboto";
+        font-size: 0.833vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .date {
+        margin: 0.729vw 0 0 0;
+        color: #505050;
+        font-family: "Roboto";
+        font-size: 0.833vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  .nft-container {
+    position: absolute;
+    right: 34.167vw;
+    bottom: 11.927vw;
+    width: 21.667vw;
+    height: 28.906vw;
+    background-image: url(../img/welcome/blur-nft.png);
+    background-size: 100% 100%;
+    opacity: 0;
+    transition: 1s ease-in-out opacity;
+    .nft {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &.active{
+      opacity: 1;
+    }
+  }
+  .webcome-bg {
+    position: absolute;
+    right: 18.906vw;
+    bottom: 0;
+    width: 52.188vw;
+    height: auto;
+    opacity: 0;
+    transition: 1s ease-in-out opacity;
+    &.active{
+      opacity: 1;
+    }
+  }
+  .sparks {
+    position: absolute;
+    right: 17.24vw;
+    bottom: 6.25vw;
+    width: 55.521vw;
+    opacity: 0.3;
+    mix-blend-mode: lighten;
+    z-index: 1;
+    opacity: 0;
+    transition: 1s ease-in-out opacity;
+    &.active{
+      opacity: 1;
     }
   }
 }

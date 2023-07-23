@@ -467,7 +467,7 @@
       top: auto;
       left: auto;
       right: 14.453vw;
-      bottom: 6.934vw ;
+      bottom: 6.934vw;
       transform: none;
       width: 39.355vw;
       padding: 1.074vw;
@@ -502,10 +502,10 @@
             }
           }
         }
-        &.timer{
-          &:hover{
-            .circle{
-              transform: translate(-50%, -50%) scale(.9);
+        &.timer {
+          &:hover {
+            .circle {
+              transform: translate(-50%, -50%) scale(0.9);
               background: #141313;
             }
           }
@@ -530,6 +530,55 @@
           }
         }
       }
+    }
+  }
+
+  // welcome
+  .welcome {
+    height: 100vh;
+    height: var(--app-height);
+    .welcome-title {
+      margin: 10.742vw 0 0 2.93vw;
+      @include h3();
+      font-size: 7.617vw;
+    }
+    .subtitle-container {
+      margin: 3.906vw 0 0 19.434vw;
+      gap: 6.543vw;
+      flex-direction: column;
+      .subtitle {
+        font-size: 3.711vw;
+        transform: translateX(-20%);
+      }
+      .member-container {
+        .member-title {
+          font-size: 2.148vw;
+        }
+        .status {
+          margin: 0.391vw 0 0 0;
+          font-size: 1.563vw;
+        }
+        .date {
+          margin: 1.367vw 0 0 0;
+          font-size: 1.563vw;
+        }
+      }
+    }
+    .nft-container {
+      right: 19.824vw;
+      bottom: 15.625vw;
+      width: 28.223vw;
+      height: 37.598vw;
+    }
+    .webcome-bg {
+      right: 0;
+      bottom: 0;
+      width: 67.969vw;
+    }
+    .sparks {
+      right: -2.148vw;
+      bottom: 15.039vw;
+      width: 72.266vw;
     }
   }
 }

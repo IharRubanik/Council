@@ -469,4 +469,50 @@
   .mint .nft-container .mint-nft:hover span:first-child {
     transform: translateY(-140%);
   }
+  .welcome {
+    height: 100vh;
+    height: var(--app-height);
+  }
+  .welcome .welcome-title {
+    margin: 10.742vw 0 0 2.93vw;
+    font-size: 5.664vw;
+    line-height: 100%;
+    font-size: 7.617vw;
+  }
+  .welcome .subtitle-container {
+    margin: 3.906vw 0 0 19.434vw;
+    gap: 6.543vw;
+    flex-direction: column;
+  }
+  .welcome .subtitle-container .subtitle {
+    font-size: 3.711vw;
+    transform: translateX(-20%);
+  }
+  .welcome .subtitle-container .member-container .member-title {
+    font-size: 2.148vw;
+  }
+  .welcome .subtitle-container .member-container .status {
+    margin: 0.391vw 0 0 0;
+    font-size: 1.563vw;
+  }
+  .welcome .subtitle-container .member-container .date {
+    margin: 1.367vw 0 0 0;
+    font-size: 1.563vw;
+  }
+  .welcome .nft-container {
+    right: 19.824vw;
+    bottom: 15.625vw;
+    width: 28.223vw;
+    height: 37.598vw;
+  }
+  .welcome .webcome-bg {
+    right: 0;
+    bottom: 0;
+    width: 67.969vw;
+  }
+  .welcome .sparks {
+    right: -2.148vw;
+    bottom: 15.039vw;
+    width: 72.266vw;
+  }
 }/*# sourceMappingURL=tablet.css.map */

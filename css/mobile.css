@@ -308,4 +308,56 @@
     width: 92vw;
     transform: translateX(-10px);
   }
+  .welcome {
+    height: 298.933vw;
+  }
+  .welcome .welcome-title {
+    margin: 26.667vw 0 0 4vw;
+    font-size: 12.8vw;
+    font-size: 18.133vw;
+  }
+  .welcome .subtitle-container {
+    margin: 8vw 0 0 37.6vw;
+    gap: 13.333vw;
+  }
+  .welcome .subtitle-container .subtitle {
+    font-size: 10.133vw;
+    transform: translateX(-54%);
+  }
+  .welcome .subtitle-container .member-container {
+    margin: 0;
+  }
+  .welcome .subtitle-container .member-container .member-title {
+    font-size: 5.867vw;
+  }
+  .welcome .subtitle-container .member-container .status {
+    margin: 1.067vw 0 0 0;
+    font-size: 4.267vw;
+  }
+  .welcome .subtitle-container .member-container .date {
+    margin: 3.733vw 0 0 0;
+    font-size: 4.267vw;
+  }
+  .welcome .nft-container {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: 40.267vw;
+    width: 72.8vw;
+    height: 97.067vw;
+  }
+  .welcome .webcome-bg {
+    left: 50%;
+    right: auto;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 175.467vw;
+  }
+  .welcome .sparks {
+    left: 50%;
+    right: auto;
+    bottom: 38.667vw;
+    transform: translateX(-50%);
+    width: 186.667vw;
+  }
 }/*# sourceMappingURL=mobile.css.map */

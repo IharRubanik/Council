@@ -40,10 +40,8 @@ window.onload = function () {
     false
   );
 
-
   const changeButton = document.querySelector(".change"),
     time = document.querySelector(".time"),
-   
    initiateButton = document.querySelector('.initiate'),
    initiateContainer = document.querySelector('.initiate-container'),
    previewMint = document.querySelector('.preview-mint'),

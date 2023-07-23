@@ -74,6 +74,7 @@ body::-webkit-scrollbar-thumb {
   height: auto;
 }
 .preloader .number-container {
+  margin: 30px 0 0 0;
   position: absolute;
   bottom: 2.083vw;
   left: 3.125vw;
@@ -91,7 +92,7 @@ body::-webkit-scrollbar-thumb {
 .preloader .number-container .loading {
   padding: 0 0 9.5% 0;
   font-size: 1.25vw;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   line-height: 1.771vw;
@@ -921,7 +922,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
   transition: 2.5s ease-out opacity;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 0.938vw;
   font-style: normal;
   font-weight: 700;
@@ -1106,6 +1107,128 @@ body::-webkit-scrollbar-thumb {
 }
 .mint.no-active .nft-container {
   opacity: 0;
+}
+
+.welcome {
+  position: relative;
+  height: 100vh;
+  height: var(--app-height);
+  overflow: hidden;
+}
+.welcome .welcome-title {
+  position: relative;
+  margin: 6.875vw 0 0 3.125vw;
+  z-index: 2;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.25vw;
+  line-height: 6.25vw;
+  color: #ffffff;
+}
+.welcome .subtitle-container {
+  position: relative;
+  margin: 2.292vw 0 0 16.667vw;
+  display: flex;
+  gap: 38.698vw;
+  z-index: 2;
+  opacity: 0;
+  transition: 1s ease-in-out opacity;
+}
+.welcome .subtitle-container.active {
+  opacity: 1;
+}
+.welcome .subtitle-container.active .subtitle {
+  transform: translateX(0%);
+}
+.welcome .subtitle-container .subtitle {
+  color: #fff;
+  font-family: "Bebas Neue";
+  font-size: 3.021vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transform: translateX(-84%);
+  transition: 1s ease-in-out transform;
+}
+.welcome .subtitle-container .subtitle span {
+  color: #ea5f1b;
+}
+.welcome .subtitle-container .member-container {
+  display: flex;
+  flex-direction: column;
+}
+.welcome .subtitle-container .member-container .member-title {
+  color: #fff;
+  font-family: "Bebas Neue";
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.welcome .subtitle-container .member-container .status {
+  margin: 0.104vw 0 0 0;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.welcome .subtitle-container .member-container .date {
+  margin: 0.729vw 0 0 0;
+  color: #505050;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.welcome .nft-container {
+  position: absolute;
+  right: 34.167vw;
+  bottom: 11.927vw;
+  width: 21.667vw;
+  height: 28.906vw;
+  background-image: url(../img/welcome/blur-nft.png);
+  background-size: 100% 100%;
+  opacity: 0;
+  transition: 1s ease-in-out opacity;
+}
+.welcome .nft-container .nft {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.welcome .nft-container.active {
+  opacity: 1;
+}
+.welcome .webcome-bg {
+  position: absolute;
+  right: 18.906vw;
+  bottom: 0;
+  width: 52.188vw;
+  height: auto;
+  opacity: 0;
+  transition: 1s ease-in-out opacity;
+}
+.welcome .webcome-bg.active {
+  opacity: 1;
+}
+.welcome .sparks {
+  position: absolute;
+  right: 17.24vw;
+  bottom: 6.25vw;
+  width: 55.521vw;
+  opacity: 0.3;
+  mix-blend-mode: lighten;
+  z-index: 1;
+  opacity: 0;
+  transition: 1s ease-in-out opacity;
+}
+.welcome .sparks.active {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 600px) and (min-aspect-ratio: 375/573) {

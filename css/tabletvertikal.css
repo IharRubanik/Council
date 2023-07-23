@@ -414,4 +414,54 @@
   .mint {
     height: 1024px !important;
   }
+}
+@media only screen and (max-width: 860px) {
+  .welcome {
+    height: 100vh;
+    height: var(--app-height);
+  }
+  .welcome .welcome-title {
+    margin: 14.323vw 0 0 3.906vw;
+    font-size: 7.552vw;
+    line-height: 100%;
+    font-size: 10.156vw;
+  }
+  .welcome .subtitle-container {
+    margin: 3.906vw 0 0 25.911vw;
+    gap: 42.188vw;
+  }
+  .welcome .subtitle-container .subtitle {
+    font-size: 4.948vw;
+    transform: translateX(-30%);
+  }
+  .welcome .subtitle-container .member-container {
+    margin: 0 0 0 41.146vw;
+  }
+  .welcome .subtitle-container .member-container .member-title {
+    font-size: 2.865vw;
+  }
+  .welcome .subtitle-container .member-container .status {
+    margin: 0.521vw 0 0 0;
+    font-size: 2.083vw;
+  }
+  .welcome .subtitle-container .member-container .date {
+    margin: 1.823vw 0 0 0;
+    font-size: 2.083vw;
+  }
+  .welcome .nft-container {
+    right: 39.323vw;
+    bottom: 19.661vw;
+    width: 37.63vw;
+    height: 50.13vw;
+  }
+  .welcome .webcome-bg {
+    right: 14.323vw;
+    bottom: 0;
+    width: 85.677vw;
+  }
+  .welcome .sparks {
+    right: 11.589vw;
+    bottom: 18.88vw;
+    width: 91.146vw;
+  }
 }/*# sourceMappingURL=tabletvertikal.css.map */

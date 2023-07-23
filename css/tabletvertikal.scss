@@ -466,10 +466,56 @@
 }
 @media  (min-aspect-ratio: 768 / 900) {
   .mint{
-   
     height: 1024px !important;
   }
 }
 
-
+  // welcome
+  .welcome {
+    height: 100vh;
+    height: var(--app-height);
+    .welcome-title {
+      margin: 14.323vw 0 0 3.906vw;
+      @include h3();
+      font-size: 10.156vw;
+    }
+    .subtitle-container {
+      margin: 3.906vw 0 0 25.911vw;
+      gap: 42.188vw;
+      .subtitle {
+        font-size: 4.948vw;
+        transform: translateX(-30%);
+      }
+      .member-container {
+        margin: 0 0 0 41.146vw;
+        .member-title {
+          font-size: 2.865vw;
+        }
+        .status {
+          margin: 0.521vw 0 0 0;
+          font-size: 2.083vw;
+        }
+        .date {
+          margin: 1.823vw 0 0 0;
+          font-size: 2.083vw;
+        }
+      }
+    }
+    .nft-container {
+      right: 39.323vw;
+      bottom: 19.661vw;
+      width: 37.63vw;
+      height: 50.13vw;
+    }
+    .webcome-bg {
+      right: 14.323vw;
+      bottom: 0;
+      width: 85.677vw;
+    }
+    .sparks {
+      right: 11.589vw;
+      bottom: 18.88vw;
+      width: 91.146vw;
+    }
+  }
 }
