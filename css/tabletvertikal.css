@@ -464,4 +464,296 @@
     bottom: 18.88vw;
     width: 91.146vw;
   }
+}
+@media only screen and (max-width: 860px) {
+  .payment .payment-title {
+    margin: 14.323vw 0 0 3.906vw;
+    font-size: 7.552vw;
+    line-height: 100%;
+  }
+  .payment .preview-member {
+    top: 27.083vw;
+    left: 3.906vw;
+    gap: 2.865vw;
+  }
+  .payment .preview-member .img-container {
+    width: 10.156vw;
+    height: 12.24vw;
+  }
+  .payment .preview-member .right-block .prewiew-title {
+    font-size: 2.865vw;
+  }
+  .payment .preview-member .right-block .prewiew-subtitle {
+    margin: 0.521vw 0 0 0;
+    font-size: 2.083vw;
+  }
+  .payment .preview-member .right-block .cancel {
+    margin: 1.823vw 0 0 0;
+    gap: 1.042vw;
+    font-size: 2.083vw;
+    line-height: 2.344vw;
+  }
+  .payment .preview-member .right-block .cancel svg {
+    width: 2.214vw;
+  }
+  .payment .preview-member .right-block .cancel span::after {
+    height: 1px;
+  }
+  .payment .preview-member .right-block .cancel svg {
+    width: 2.214vw;
+  }
+  .payment .reserved {
+    top: 27.083vw;
+    right: 3.906vw;
+    gap: 0.521vw;
+  }
+  .payment .reserved .reserved-title {
+    font-size: 2.083vw;
+    margin: 0 2.083vw 0 0;
+  }
+  .payment .reserved .minutes,
+  .payment .reserved .seconds {
+    width: 5.208vw;
+    height: 5.208vw;
+    border-radius: 0.781vw;
+    border: 1px solid #323232;
+    font-size: 2.344vw;
+  }
+  .payment .reserved .colon {
+    font-size: 1.823vw;
+  }
+  .payment .circl-number {
+    width: 6.51vw;
+    height: 6.51vw;
+    margin: 22.135vw 0 0 3.906vw;
+  }
+  .payment .circl-number span {
+    font-size: 2.604vw;
+  }
+  .payment .payment-metod {
+    margin: 0 0 0 16.927vw;
+  }
+  .payment .payment-metod .subtitle {
+    font-size: 4.948vw;
+  }
+  .payment .payment-metod .accordion-container {
+    margin: 3.125vw 0 0 0;
+    gap: 2.604vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet.open {
+    height: 50.391vw;
+  }
+  .payment .payment-metod .accordion-container .external-wallet.open {
+    height: 77.344vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet,
+  .payment .payment-metod .accordion-container .external-wallet {
+    width: 79.167vw;
+    height: 12.24vw;
+    border-radius: 0.781vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container,
+  .payment .payment-metod .accordion-container .external-wallet .external-container {
+    padding: 0 2.604vw 2.604vw 0;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block {
+    padding: 2.604vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .accordion-title,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .accordion-title,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .accordion-title,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .accordion-title {
+    font-size: 2.865vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .accordion-img,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .accordion-img,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .accordion-img,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .accordion-img {
+    width: 10.677vw;
+    top: 0.781vw;
+    right: 1.302vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .accordion-arrow,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .accordion-arrow,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .accordion-arrow,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .accordion-arrow {
+    width: 1.823vw;
+    margin: 2.604vw 0 0 0;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .qr-code,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .qr-code,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .qr-code,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .qr-code {
+    margin: 4.427vw 0 0 0;
+    gap: 10.677vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .qr-code .qr-container,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .qr-code .qr-container,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .qr-code .qr-container,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .qr-code .qr-container {
+    width: 14.323vw;
+    height: 14.323vw;
+    padding: 4px;
+    border-radius: 6px;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .qr-code .qr-container .img-qr,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .qr-code .qr-container .img-qr,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .qr-code .qr-container .img-qr,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .qr-code .qr-container .img-qr {
+    width: 100%;
+    height: 100%;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .qr-code .accordion-name,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .qr-code .accordion-name,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .qr-code .accordion-name,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .qr-code .accordion-name {
+    font-size: 2.083vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .recipient-address,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .recipient-address,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .recipient-address,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .recipient-address {
+    margin: 3.125vw 0 0 0;
+    gap: 3.125vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .recipient-address .accordion-name,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .recipient-address .accordion-name,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .recipient-address .accordion-name,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .recipient-address .accordion-name {
+    font-size: 2.083vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .recipient-address .adress,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .recipient-address .adress,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .recipient-address .adress,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .recipient-address .adress {
+    gap: 1.042vw;
+    padding: 0.651vw 1.172vw;
+    border-radius: 0.781vw;
+    border: 1px solid rgba(234, 95, 27, 0.25);
+    font-size: 2.083vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .recipient-address .adress .copy,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .recipient-address .adress .copy,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .recipient-address .adress .copy,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .recipient-address .adress .copy {
+    width: 2.344vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .mint-price,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .mint-price,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .mint-price,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .mint-price {
+    margin: 4.427vw 0 0 0;
+    gap: 8.854vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .mint-price .accordion-name,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .mint-price .accordion-name,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .mint-price .accordion-name,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .mint-price .accordion-name {
+    font-size: 2.083vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .mint-price .accordion-meaning,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .mint-price .accordion-meaning,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .mint-price .accordion-meaning,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .mint-price .accordion-meaning {
+    font-size: 2.083vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .mint-price .accordion-meaning .accordion-sum,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .mint-price .accordion-meaning .accordion-sum,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .mint-price .accordion-meaning .accordion-sum,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .mint-price .accordion-meaning .accordion-sum {
+    font-size: 2.083vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .network-fee,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .network-fee,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .network-fee,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .network-fee {
+    margin: 3.125vw 0 0 0;
+    gap: 6.771vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .network-fee .accordion-name,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .network-fee .accordion-name,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .network-fee .accordion-name,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .network-fee .accordion-name {
+    font-size: 2.083vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .network-fee .accordion-meaning,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .network-fee .accordion-meaning,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .network-fee .accordion-meaning,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .network-fee .accordion-meaning {
+    font-size: 2.083vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .network-fee .accordion-meaning .accordion-sum,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .network-fee .accordion-meaning .accordion-sum,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .network-fee .accordion-meaning .accordion-sum,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .top-block .network-fee .accordion-meaning .accordion-sum {
+    font-size: 2.083vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .total-amount,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .total-amount,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .total-amount,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .total-amount {
+    gap: 0.781vw;
+    padding: 2.604vw 2.604vw 2.083vw 2.604vw;
+    border-radius: 0px 0.781vw 0.781vw 0px;
+    border-top: 1px solid #141313;
+    border-right: 1px solid #141313;
+    border-bottom: 1px solid #141313;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .total-amount .accordion-name,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .total-amount .accordion-name,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .total-amount .accordion-name,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .total-amount .accordion-name {
+    font-size: 2.083vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .total-amount .accordion-quantity,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .total-amount .accordion-quantity,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .total-amount .accordion-quantity,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .total-amount .accordion-quantity {
+    font-size: 4.688vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .total-amount .accordion-quantity .currency,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .total-amount .accordion-quantity .currency,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .total-amount .accordion-quantity .currency,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .total-amount .accordion-quantity .currency {
+    font-size: 2.865vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .total-amount .accordion-sum,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .total-amount .accordion-sum,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .total-amount .accordion-sum,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .total-amount .accordion-sum {
+    right: 2.604vw;
+    bottom: 2.865vw;
+    font-size: 2.083vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .accordion-button,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .accordion-button,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .accordion-button,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .accordion-button {
+    margin: 3.906vw 0 0 2.604vw;
+    min-width: 24.609vw;
+    padding: 1.042vw 6.771vw;
+    border-radius: 0.521vw;
+    font-size: 1.953vw;
+    line-height: 100%;
+    max-height: 4.1vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .bottom-container,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .bottom-container,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .bottom-container,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .bottom-container {
+    gap: 3.646vw;
+  }
+  .payment .payment-metod .accordion-container .connected-wallet .connected-container .bottom-container .instruction,
+  .payment .payment-metod .accordion-container .connected-wallet .external-container .bottom-container .instruction,
+  .payment .payment-metod .accordion-container .external-wallet .connected-container .bottom-container .instruction,
+  .payment .payment-metod .accordion-container .external-wallet .external-container .bottom-container .instruction {
+    margin: 3.516vw 0 0 0;
+    font-size: 1.823vw;
+    line-height: 2.604vw;
+  }
 }/*# sourceMappingURL=tabletvertikal.css.map */

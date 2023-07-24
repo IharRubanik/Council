@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb {
   height: auto;
 }
 .preloader .number-container {
-  margin: 30px 0 0 0;
+  margin: 1.563vw 0 0 0;
   position: absolute;
   bottom: 2.083vw;
   left: 3.125vw;
@@ -1230,6 +1230,689 @@ body::-webkit-scrollbar-thumb {
 }
 .welcome .sparks.active {
   opacity: 1;
+}
+
+.payment {
+  position: relative;
+  height: 55.208vw;
+  overflow: hidden;
+  transition: 0.25s ease-out height;
+}
+.payment .payment-title {
+  margin: 6.875vw 0 0 3.125vw;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.25vw;
+  line-height: 6.25vw;
+  color: #ffffff;
+}
+.payment .preview-member {
+  position: absolute;
+  top: 7.448vw;
+  left: 18.906vw;
+  display: flex;
+  gap: 1.146vw;
+}
+.payment .preview-member .img-container {
+  position: relative;
+  width: 4.063vw;
+  height: 4.896vw;
+}
+.payment .preview-member .img-container .mask {
+  width: 100%;
+  height: 100%;
+}
+.payment .preview-member .img-container .prewiew {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.payment .preview-member .right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.payment .preview-member .right-block .prewiew-title {
+  color: #fff;
+  font-family: "Bebas Neue";
+  font-size: 1.146vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.payment .preview-member .right-block .prewiew-subtitle {
+  margin: 0.208vw 0 0 0;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.payment .preview-member .right-block .cancel {
+  margin: 0.729vw 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0.417vw;
+  color: #ea5f1b;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.938vw;
+  text-decoration: none;
+  outline: 0;
+}
+.payment .preview-member .right-block .cancel svg {
+  width: 0.885vw;
+  height: auto;
+}
+.payment .preview-member .right-block .cancel span {
+  position: relative;
+}
+.payment .preview-member .right-block .cancel span::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #ea5f1b;
+  transition: 0.25s ease-out width;
+}
+.payment .preview-member .right-block .cancel svg {
+  width: 0.885vw;
+  height: auto;
+}
+.payment .preview-member .right-block .cancel:hover span::after {
+  width: 100%;
+}
+.payment .reserved {
+  position: absolute;
+  top: 7.448vw;
+  right: 18.906vw;
+  display: flex;
+  align-items: center;
+  gap: 0.208vw;
+}
+.payment .reserved .reserved-title {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0.833vw 0 0;
+}
+.payment .reserved .minutes,
+.payment .reserved .seconds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.083vw;
+  height: 2.083vw;
+  border-radius: 0.313vw;
+  border: 1px solid #323232;
+  color: #fff;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 0.938vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.payment .reserved .colon {
+  color: #505050;
+  font-family: "Roboto";
+  font-size: 0.729vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.payment .circl-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.865vw;
+  height: 2.865vw;
+  background-image: url(../img/payment/round.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 2.604vw 0 0 3.125vw;
+  transition: 2.5s ease-out opacity;
+}
+.payment .circl-number span {
+  color: #ea5f1b;
+  font-family: "Roboto";
+  font-size: 1.042vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.payment .payment-metod {
+  position: absolute;
+  left: 50%;
+  top: 15.833vw;
+  transform: translateX(-50%);
+}
+.payment .payment-metod .subtitle {
+  font-family: "Bebas Neue";
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #ffffff;
+}
+.payment .payment-metod .accordion-container {
+  margin: 1.042vw 0 0 0;
+  display: flex;
+  gap: 1.042vw;
+}
+.payment .payment-metod .accordion-container * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.payment .payment-metod .accordion-container .connected-wallet.open {
+  height: 20.313vw;
+}
+.payment .payment-metod .accordion-container .external-wallet.open {
+  height: 31.302vw;
+}
+.payment .payment-metod .accordion-container .connected-wallet,
+.payment .payment-metod .accordion-container .external-wallet {
+  position: relative;
+  width: 30.573vw;
+  height: 4.896vw;
+  border-radius: 0.313vw;
+  background: #1c1a19;
+  box-sizing: border-box;
+  transition: 0.25s ease-out background, 0.25s ease-out height;
+  overflow: hidden;
+}
+.payment .payment-metod .accordion-container .connected-wallet.closed,
+.payment .payment-metod .accordion-container .external-wallet.closed {
+  background: #1c1a19;
+  cursor: pointer;
+}
+.payment .payment-metod .accordion-container .connected-wallet.closed .connected-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .connected-wallet.closed .external-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .external-wallet.closed .connected-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .external-wallet.closed .external-container .top-block .accordion-title {
+  color: #ea5f1b;
+}
+.payment .payment-metod .accordion-container .connected-wallet.open .connected-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .connected-wallet.open .external-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .external-wallet.open .connected-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .external-wallet.open .external-container .top-block .accordion-title {
+  color: #fff;
+}
+.payment .payment-metod .accordion-container .connected-wallet.open .connected-container .accordion-arrow,
+.payment .payment-metod .accordion-container .connected-wallet.open .external-container .accordion-arrow,
+.payment .payment-metod .accordion-container .external-wallet.open .connected-container .accordion-arrow,
+.payment .payment-metod .accordion-container .external-wallet.open .external-container .accordion-arrow {
+  transform: rotate(180deg);
+}
+.payment .payment-metod .accordion-container .connected-wallet:hover,
+.payment .payment-metod .accordion-container .external-wallet:hover {
+  background: #ea5f1b;
+  cursor: pointer;
+}
+.payment .payment-metod .accordion-container .connected-wallet:hover .connected-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .connected-wallet:hover .external-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .external-wallet:hover .connected-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .external-wallet:hover .external-container .top-block .accordion-title {
+  color: #fff;
+}
+.payment .payment-metod .accordion-container .connected-wallet:hover .connected-container .top-block .accordion-img path,
+.payment .payment-metod .accordion-container .connected-wallet:hover .external-container .top-block .accordion-img path,
+.payment .payment-metod .accordion-container .external-wallet:hover .connected-container .top-block .accordion-img path,
+.payment .payment-metod .accordion-container .external-wallet:hover .external-container .top-block .accordion-img path {
+  fill: #fff;
+}
+.payment .payment-metod .accordion-container .connected-wallet:hover .connected-container .accordion-arrow path,
+.payment .payment-metod .accordion-container .connected-wallet:hover .external-container .accordion-arrow path,
+.payment .payment-metod .accordion-container .external-wallet:hover .connected-container .accordion-arrow path,
+.payment .payment-metod .accordion-container .external-wallet:hover .external-container .accordion-arrow path {
+  stroke: #fff;
+}
+.payment .payment-metod .accordion-container .connected-wallet:hover.closed,
+.payment .payment-metod .accordion-container .external-wallet:hover.closed {
+  background: #ea5f1b;
+  cursor: pointer;
+}
+.payment .payment-metod .accordion-container .connected-wallet:hover.closed .top-block .accordion-title,
+.payment .payment-metod .accordion-container .external-wallet:hover.closed .top-block .accordion-title {
+  color: #fff;
+}
+.payment .payment-metod .accordion-container .connected-wallet:hover.closed .top-block .accordion-img path,
+.payment .payment-metod .accordion-container .external-wallet:hover.closed .top-block .accordion-img path {
+  fill: #fff;
+}
+.payment .payment-metod .accordion-container .connected-wallet:hover.closed .accordion-arrow path,
+.payment .payment-metod .accordion-container .external-wallet:hover.closed .accordion-arrow path {
+  stroke: #fff;
+}
+.payment .payment-metod .accordion-container .connected-wallet:hover.open,
+.payment .payment-metod .accordion-container .external-wallet:hover.open {
+  background: #1c1a19;
+  cursor: auto;
+}
+.payment .payment-metod .accordion-container .connected-wallet:hover.open .connected-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .connected-wallet:hover.open .external-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .external-wallet:hover.open .connected-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .external-wallet:hover.open .external-container .top-block .accordion-title {
+  color: #fff;
+}
+.payment .payment-metod .accordion-container .connected-wallet:hover.open .connected-container .top-block .accordion-img path,
+.payment .payment-metod .accordion-container .connected-wallet:hover.open .external-container .top-block .accordion-img path,
+.payment .payment-metod .accordion-container .external-wallet:hover.open .connected-container .top-block .accordion-img path,
+.payment .payment-metod .accordion-container .external-wallet:hover.open .external-container .top-block .accordion-img path {
+  fill: #505050;
+}
+.payment .payment-metod .accordion-container .connected-wallet:hover.open .connected-container .accordion-arrow,
+.payment .payment-metod .accordion-container .connected-wallet:hover.open .external-container .accordion-arrow,
+.payment .payment-metod .accordion-container .external-wallet:hover.open .connected-container .accordion-arrow,
+.payment .payment-metod .accordion-container .external-wallet:hover.open .external-container .accordion-arrow {
+  transform: rotate(180deg);
+}
+.payment .payment-metod .accordion-container .connected-wallet:hover.open .connected-container .accordion-arrow path,
+.payment .payment-metod .accordion-container .connected-wallet:hover.open .external-container .accordion-arrow path,
+.payment .payment-metod .accordion-container .external-wallet:hover.open .connected-container .accordion-arrow path,
+.payment .payment-metod .accordion-container .external-wallet:hover.open .external-container .accordion-arrow path {
+  stroke: #505050;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container,
+.payment .payment-metod .accordion-container .connected-wallet .external-container,
+.payment .payment-metod .accordion-container .external-wallet .connected-container,
+.payment .payment-metod .accordion-container .external-wallet .external-container {
+  padding: 0 1.042vw 1.042vw 0;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block {
+  box-sizing: border-box;
+  padding: 1.042vw;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .accordion-title,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .accordion-title {
+  color: #ea5f1b;
+  font-family: "Bebas Neue";
+  font-size: 1.146vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: 0.25s ease-out color;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .accordion-img,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .accordion-img,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .accordion-img,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .accordion-img {
+  width: 4.271vw;
+  height: auto;
+  position: absolute;
+  top: 0.313vw;
+  right: 0.521vw;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .accordion-img path,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .accordion-img path,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .accordion-img path,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .accordion-img path {
+  transition: 0.25s ease-out fill;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .accordion-arrow,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .accordion-arrow,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .accordion-arrow,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .accordion-arrow {
+  width: 0.729vw;
+  margin: 1.042vw 0 0 0;
+  transition: 0.25s ease-out transform;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .accordion-arrow path,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .accordion-arrow path,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .accordion-arrow path,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .accordion-arrow path {
+  transition: 0.25s ease-out stroke;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .qr-code,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .qr-code,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .qr-code,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .qr-code {
+  margin: 1.771vw 0 0 0;
+  display: flex;
+  gap: 4.271vw;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .qr-code .qr-container,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .qr-code .qr-container,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .qr-code .qr-container,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .qr-code .qr-container {
+  display: flex;
+  width: 5.729vw;
+  height: 5.729vw;
+  padding: 0.208vw;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 0.313vw;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .qr-code .qr-container .img-qr,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .qr-code .qr-container .img-qr,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .qr-code .qr-container .img-qr,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .qr-code .qr-container .img-qr {
+  width: 100%;
+  height: 100%;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .qr-code .accordion-name,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .qr-code .accordion-name,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .qr-code .accordion-name,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .qr-code .accordion-name {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .recipient-address,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .recipient-address,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .recipient-address,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .recipient-address {
+  margin: 1.25vw 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 1.25vw;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .recipient-address .accordion-name,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .recipient-address .accordion-name,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .recipient-address .accordion-name,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .recipient-address .accordion-name {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .recipient-address .adress,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .recipient-address .adress,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .recipient-address .adress,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .recipient-address .adress {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 0.417vw;
+  padding: 0.26vw 0.469vw;
+  border-radius: 0.313vw;
+  border: 1px solid rgba(234, 95, 27, 0.25);
+  color: #ea5f1b;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.25s ease-out background, 0.25s ease-out color;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .recipient-address .adress .copy,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .recipient-address .adress .copy,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .recipient-address .adress .copy,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .recipient-address .adress .copy {
+  width: 0.938vw;
+  height: auto;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .recipient-address .adress .copy path,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .recipient-address .adress .copy path,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .recipient-address .adress .copy path,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .recipient-address .adress .copy path {
+  transition: 0.25s ease-out fill;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .recipient-address .adress:hover,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .recipient-address .adress:hover,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .recipient-address .adress:hover,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .recipient-address .adress:hover {
+  background: #ea5f1b;
+  color: #fff;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .recipient-address .adress:hover .copy path,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .recipient-address .adress:hover .copy path,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .recipient-address .adress:hover .copy path,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .recipient-address .adress:hover .copy path {
+  fill: #fff;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .mint-price,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .mint-price,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .mint-price,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .mint-price {
+  margin: 1.771vw 0 0 0;
+  display: flex;
+  gap: 3.542vw;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .mint-price .accordion-name,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .mint-price .accordion-name,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .mint-price .accordion-name,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .mint-price .accordion-name {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .mint-price .accordion-meaning,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .mint-price .accordion-meaning,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .mint-price .accordion-meaning,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .mint-price .accordion-meaning {
+  display: flex;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .mint-price .accordion-meaning .accordion-sum,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .mint-price .accordion-meaning .accordion-sum,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .mint-price .accordion-meaning .accordion-sum,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .mint-price .accordion-meaning .accordion-sum {
+  color: #505050;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .network-fee,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .network-fee,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .network-fee,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .network-fee {
+  margin: 1.25vw 0 0 0;
+  display: flex;
+  gap: 2.708vw;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .network-fee .accordion-name,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .network-fee .accordion-name,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .network-fee .accordion-name,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .network-fee .accordion-name {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .network-fee .accordion-meaning,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .network-fee .accordion-meaning,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .network-fee .accordion-meaning,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .network-fee .accordion-meaning {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .top-block .network-fee .accordion-meaning .accordion-sum,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .top-block .network-fee .accordion-meaning .accordion-sum,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .top-block .network-fee .accordion-meaning .accordion-sum,
+.payment .payment-metod .accordion-container .external-wallet .external-container .top-block .network-fee .accordion-meaning .accordion-sum {
+  color: #505050;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .total-amount,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .total-amount,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .total-amount,
+.payment .payment-metod .accordion-container .external-wallet .external-container .total-amount {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.313vw;
+  box-sizing: border-box;
+  padding: 1.042vw 1.042vw 0.833vw 1.042vw;
+  border-radius: 0vw 0.313vw 0.313vw 0vw;
+  border-top: 1px solid #141313;
+  border-right: 1px solid #141313;
+  border-bottom: 1px solid #141313;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .total-amount .accordion-name,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .total-amount .accordion-name,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .total-amount .accordion-name,
+.payment .payment-metod .accordion-container .external-wallet .external-container .total-amount .accordion-name {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .total-amount .accordion-quantity,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .total-amount .accordion-quantity,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .total-amount .accordion-quantity,
+.payment .payment-metod .accordion-container .external-wallet .external-container .total-amount .accordion-quantity {
+  color: #ea5f1b;
+  font-family: "Bebas Neue";
+  font-size: 1.875vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .total-amount .accordion-quantity .currency,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .total-amount .accordion-quantity .currency,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .total-amount .accordion-quantity .currency,
+.payment .payment-metod .accordion-container .external-wallet .external-container .total-amount .accordion-quantity .currency {
+  font-size: 1.146vw;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .total-amount .accordion-sum,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .total-amount .accordion-sum,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .total-amount .accordion-sum,
+.payment .payment-metod .accordion-container .external-wallet .external-container .total-amount .accordion-sum {
+  position: absolute;
+  right: 1.042vw;
+  bottom: 1.146vw;
+  color: #505050;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .accordion-button,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .accordion-button,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .accordion-button,
+.payment .payment-metod .accordion-container .external-wallet .external-container .accordion-button {
+  margin: 1.563vw 0 0 1.042vw;
+  min-width: 9.844vw;
+  width: auto;
+  height: auto;
+  max-height: 1.771vw;
+  padding: 0.417vw 0.99vw;
+  background: #ffffff;
+  border-radius: 0.208vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.781vw;
+  line-height: 0.938vw;
+  text-transform: uppercase;
+  color: #141313;
+  transition: 0.25s ease-out background, 0.25s ease-out color;
+  border: none;
+  overflow: hidden;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .accordion-button span,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .accordion-button span,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .accordion-button span,
+.payment .payment-metod .accordion-container .external-wallet .external-container .accordion-button span {
+  transition: 0.25s ease-out transform;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .accordion-button span:last-child,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .accordion-button span:last-child,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .accordion-button span:last-child,
+.payment .payment-metod .accordion-container .external-wallet .external-container .accordion-button span:last-child {
+  transform: translateY(100%);
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .accordion-button span:first-child,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .accordion-button span:first-child,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .accordion-button span:first-child,
+.payment .payment-metod .accordion-container .external-wallet .external-container .accordion-button span:first-child {
+  transform: translateY(50%);
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .accordion-button:hover,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .accordion-button:hover,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .accordion-button:hover,
+.payment .payment-metod .accordion-container .external-wallet .external-container .accordion-button:hover {
+  background: #ea5f1b;
+  color: #ffffff;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .accordion-button:hover span,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .accordion-button:hover span,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .accordion-button:hover span,
+.payment .payment-metod .accordion-container .external-wallet .external-container .accordion-button:hover span {
+  transform: translateY(-100%);
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .accordion-button:hover span:last-child,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .accordion-button:hover span:last-child,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .accordion-button:hover span:last-child,
+.payment .payment-metod .accordion-container .external-wallet .external-container .accordion-button:hover span:last-child {
+  transform: translateY(-50%);
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .bottom-container,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .bottom-container,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .bottom-container,
+.payment .payment-metod .accordion-container .external-wallet .external-container .bottom-container {
+  display: flex;
+  gap: 1.458vw;
+}
+.payment .payment-metod .accordion-container .connected-wallet .connected-container .bottom-container .instruction,
+.payment .payment-metod .accordion-container .connected-wallet .external-container .bottom-container .instruction,
+.payment .payment-metod .accordion-container .external-wallet .connected-container .bottom-container .instruction,
+.payment .payment-metod .accordion-container .external-wallet .external-container .bottom-container .instruction {
+  margin: 1.458vw 0 0 0;
+  width: auto;
+  color: #505050;
+  font-family: "Roboto";
+  font-size: 0.729vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.042vw;
 }
 
 @media only screen and (max-width: 600px) and (min-aspect-ratio: 375/573) {

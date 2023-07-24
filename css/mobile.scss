@@ -411,4 +411,258 @@
       width: 186.667vw;
     }
   }
+
+  // payment
+  @mixin accordion-name {
+    font-size: 4.267vw;
+  }
+  @mixin accordion-meaning {
+    font-size: 4.267vw;
+  }
+  @mixin accordion-quantity {
+    font-size: 9.6vw;
+  }
+  @mixin accordion-sum {
+    font-size: 4.267vw;
+  }
+  .payment {
+    padding: 0 0 8vw 0;
+    .payment-title {
+      margin: 26.667vw 0 0 4vw;
+      @include h3();
+    }
+    .preview-member {
+      top: 50.133vw;
+      left: 4vw;
+      gap: 4.8vw;
+      .img-container {
+        width: 32.533vw;
+        height: 39.2vw;
+      }
+      .right-block {
+        .prewiew-title {
+          font-size: 5.867vw;
+        }
+        .prewiew-subtitle {
+          margin: 1.067vw 0 0 0;
+          font-size: 4.267vw;
+        }
+        .cancel {
+          margin: 3.733vw 0 0 0;
+          gap: 2.133vw;
+          font-size: 4.267vw;
+          line-height: 4.8vw;
+          svg {
+            width: 4.533vw;
+          }
+          span {
+            &::after {
+              height: 1px;
+            }
+          }
+          svg {
+            width: 4.533vw;
+          }
+        }
+      }
+    }
+    .reserved {
+      top: 81.6vw;
+      right: 4vw;
+      gap: 1.067vw;
+      .reserved-title {
+        font-size: 4.267vw;
+        margin: 0 3.467vw 0 0;
+      }
+      .minutes,
+      .seconds {
+        width: 10.667vw;
+        height: 10.667vw;
+        border-radius: 6px;
+        border: 1px solid #323232;
+        font-size: 4.8vw;
+      }
+      .colon {
+        font-size: 3.733vw;
+      }
+    }
+    .circl-number {
+      width: 11.733vw;
+      height: 11.733vw;
+      margin: 61.333vw 0 0 4vw;
+      span {
+        font-size: 4.267vw;
+      }
+    }
+    .payment-metod {
+      margin: 4vw 0 0 4vw;
+      transform: translate(0);
+      .subtitle {
+        @include mint-subtitle();
+      }
+      .accordion-container {
+        margin: 5.333vw 0 0 0;
+        gap: 4vw;
+
+        .connected-wallet {
+          &.open {
+            height: 108.533vw;
+          }
+        }
+        .external-wallet {
+          &.open {
+            height: 179.467vw;
+          }
+        }
+        .connected-wallet,
+        .external-wallet {
+          padding: 0 5.333vw 0 0;
+          width: 92vw;
+          height: 25.067vw;
+          border-radius: 1.6vw;
+          &.open {
+            .connected-container,
+            .external-container {
+              .top-block {
+                .accordion-img {
+                  opacity: 0;
+                }
+              }
+            }
+          }
+          .connected-container,
+          .external-container {
+            padding: 0;
+            .top-block {
+              padding: 5.333vw 0 5.333vw 5.333vw;
+              .accordion-title {
+                font-size: 5.867vw;
+              }
+              .accordion-img {
+                transition: 0.25s ease-out opacity;
+                width: 21.867vw;
+                top: 1.6vw;
+                right: 2.667vw;
+              }
+              .accordion-arrow {
+                width: 3.733vw;
+                margin: 5.333vw 0 0 0;
+              }
+              .qr-code {
+                margin: 9.067vw 0 0 0;
+                gap: 21.867vw;
+                .qr-container {
+                  width: 29.333vw;
+                  height: 29.333vw;
+                  padding: 1.067vw;
+                  border-radius: 6px;
+                  .img-qr {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                .accordion-name {
+                  @include accordion-name();
+                }
+              }
+              .recipient-address {
+                margin: 24px 0 0 0;
+                gap: 24px;
+                .accordion-name {
+                  @include accordion-name();
+                }
+                .adress {
+                  gap: 2.133vw;
+                  padding: 1.6vw 2.667vw;
+                  border-radius: 1.6vw;
+                  border: 1px solid rgba(234, 95, 27, 0.25);
+                  font-size: 4.267vw;
+                  .copy {
+                    width: 4.8vw;
+                  }
+                }
+              }
+              .mint-price {
+                margin: 9.067vw 0 0 0;
+                gap: 18.133vw;
+                .accordion-name {
+                  @include accordion-name();
+                }
+                .accordion-meaning {
+                  @include accordion-meaning();
+                  .accordion-sum {
+                    @include accordion-sum();
+                  }
+                }
+              }
+              .network-fee {
+                margin: 6.4vw 0 0 0;
+                gap: 52px;
+                .accordion-name {
+                  @include accordion-name();
+                }
+                .accordion-meaning {
+                  @include accordion-meaning();
+                  .accordion-sum {
+                    @include accordion-sum();
+                  }
+                }
+              }
+            }
+            .total-amount {
+              gap: 6px;
+              padding: 5.333vw 5.333vw 4.267vw 5.333vw;
+              border-radius: 0px 1.6vw 1.6vw 0px;
+              border-top: 1px solid #141313;
+              border-right: 1px solid #141313;
+              border-bottom: 1px solid #141313;
+              .accordion-name {
+                @include accordion-name();
+              }
+              .accordion-quantity {
+                @include accordion-quantity();
+                .currency {
+                  font-size: 22px;
+                }
+              }
+              .accordion-sum {
+                right: 5.333vw;
+                bottom: 5.867vw;
+                @include accordion-sum();
+              }
+            }
+            .accordion-button {
+              margin: 8vw 0 0 5.333vw;
+              min-width: auto;
+              width: 81.333vw;
+              @include button();
+              max-height: 11.733vw;
+              span {
+                &:last-child {
+                  transform: translateY(150%);
+                }
+              }
+              &:hover {
+                span {
+                  &:first-child {
+                    transform: translateY(-150%);
+                  }
+                }
+              }
+            }
+            .bottom-container {
+              gap: 4vw;
+              flex-direction: column;
+              .instruction {
+                margin: 0 0 0 5.333vw;
+                text-align: center;
+                font-size: 3.733vw;
+                line-height: 5.333vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

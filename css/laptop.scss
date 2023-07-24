@@ -170,7 +170,7 @@ body {
     height: auto;
   }
   .number-container {
-    margin: 30px 0 0 0;
+    margin: 1.563vw 0 0 0;
     position: absolute;
     bottom: 2.083vw;
     left: 3.125vw;
@@ -1148,22 +1148,22 @@ body {
     z-index: 2;
     opacity: 0;
     transition: 1s ease-in-out opacity;
-    &.active{
+    &.active {
       opacity: 1;
-      .subtitle{
+      .subtitle {
         transform: translateX(0%);
       }
     }
     .subtitle {
       color: #fff;
-      font-family: 'Bebas Neue';
+      font-family: "Bebas Neue";
       font-size: 3.021vw;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
       transform: translateX(-84%);
       transition: 1s ease-in-out transform;
-      
+
       span {
         color: #ea5f1b;
       }
@@ -1173,7 +1173,7 @@ body {
       flex-direction: column;
       .member-title {
         color: #fff;
-        font-family: 'Bebas Neue';
+        font-family: "Bebas Neue";
         font-size: 1.25vw;
         font-style: normal;
         font-weight: 700;
@@ -1214,7 +1214,7 @@ body {
       height: 100%;
       object-fit: cover;
     }
-    &.active{
+    &.active {
       opacity: 1;
     }
   }
@@ -1226,7 +1226,7 @@ body {
     height: auto;
     opacity: 0;
     transition: 1s ease-in-out opacity;
-    &.active{
+    &.active {
       opacity: 1;
     }
   }
@@ -1240,8 +1240,507 @@ body {
     z-index: 1;
     opacity: 0;
     transition: 1s ease-in-out opacity;
-    &.active{
+    &.active {
       opacity: 1;
+    }
+  }
+}
+
+// payment
+@mixin accordion-name {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+@mixin accordion-meaning {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin accordion-quantity {
+  color: #ea5f1b;
+  font-family: "Bebas Neue";
+  font-size: 1.875vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@mixin accordion-sum {
+  color: #505050;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.payment {
+  position: relative;
+  height: 55.208vw;
+  overflow: hidden;
+  transition: 0.25s ease-out height;
+  .payment-title {
+    margin: 6.875vw 0 0 3.125vw;
+    @include h3();
+  }
+  .preview-member {
+    position: absolute;
+    top: 7.448vw;
+    left: 18.906vw;
+    display: flex;
+    gap: 1.146vw;
+    .img-container {
+      position: relative;
+      width: 4.063vw;
+      height: 4.896vw;
+      .mask {
+        width: 100%;
+        height: 100%;
+      }
+      .prewiew {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+    }
+    .right-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .prewiew-title {
+        color: #fff;
+        font-family: "Bebas Neue";
+        font-size: 1.146vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .prewiew-subtitle {
+        margin: 0.208vw 0 0 0;
+        color: #fff;
+        font-family: "Roboto";
+        font-size: 0.833vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .cancel {
+        margin: 0.729vw 0 0 0;
+        display: flex;
+        align-items: center;
+        gap: 0.417vw;
+        color: #ea5f1b;
+        font-family: "Roboto";
+        font-size: 0.833vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.938vw;
+        text-decoration: none;
+        outline: 0;
+        svg {
+          width: 0.885vw;
+          height: auto;
+        }
+        span {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background: #ea5f1b;
+            transition: 0.25s ease-out width;
+          }
+        }
+        svg {
+          width: 0.885vw;
+          height: auto;
+        }
+        &:hover {
+          span {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .reserved {
+    position: absolute;
+    top: 7.448vw;
+    right: 18.906vw;
+    display: flex;
+    align-items: center;
+    gap: 0.208vw;
+    .reserved-title {
+      color: #fff;
+      font-family: "Roboto";
+      font-size: 0.833vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0 0.833vw 0 0;
+    }
+    .minutes,
+    .seconds {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.083vw;
+      height: 2.083vw;
+      border-radius: 0.313vw;
+      border: 1px solid #323232;
+      color: #fff;
+      text-align: center;
+      font-family: "Bebas Neue";
+      font-size: 0.938vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .colon {
+      color: #505050;
+      font-family: "Roboto";
+      font-size: 0.729vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .circl-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.865vw;
+    height: 2.865vw;
+    background-image: url(../img/payment/round.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 2.604vw 0 0 3.125vw;
+    transition: 2.5s ease-out opacity;
+    span {
+      color: #ea5f1b;
+      font-family: "Roboto";
+      font-size: 1.042vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+  .payment-metod {
+    position: absolute;
+    left: 50%;
+    top: 15.833vw;
+    transform: translateX(-50%);
+    .subtitle {
+      @include mint-subtitle();
+    }
+    .accordion-container {
+      margin: 1.042vw 0 0 0;
+      * {
+        user-select: none;
+      }
+      display: flex;
+      gap: 1.042vw;
+      .connected-wallet {
+        &.open {
+          height: 20.313vw;
+        }
+      }
+      .external-wallet {
+        &.open {
+          height: 31.302vw;
+        }
+      }
+      .connected-wallet,
+      .external-wallet {
+        position: relative;
+        width: 30.573vw;
+        height: 4.896vw;
+        border-radius: 0.313vw;
+        background: #1c1a19;
+        box-sizing: border-box;
+        transition: 0.25s ease-out background, 0.25s ease-out height;
+        overflow: hidden;
+        &.closed {
+          background: #1c1a19;
+          cursor: pointer;
+          .connected-container,
+          .external-container {
+            .top-block {
+              .accordion-title {
+                color: #ea5f1b;
+              }
+            }
+          }
+        }
+        &.open {
+          .connected-container,
+          .external-container {
+            .top-block {
+              .accordion-title {
+                color: #fff;
+              }
+            }
+            .accordion-arrow {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        &:hover {
+          background: #ea5f1b;
+          cursor: pointer;
+          .connected-container,
+          .external-container {
+            .top-block {
+              .accordion-title {
+                color: #fff;
+              }
+              .accordion-img {
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+            .accordion-arrow {
+              path {
+                stroke: #fff;
+              }
+            }
+          }
+          &.closed {
+            background: #ea5f1b;
+            cursor: pointer;
+            .top-block {
+              .accordion-title {
+                color: #fff;
+              }
+              .accordion-img {
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+            .accordion-arrow {
+              path {
+                stroke: #fff;
+              }
+            }
+          }
+          &.open {
+            background: #1c1a19;
+            cursor: auto;
+            .connected-container,
+            .external-container {
+              .top-block {
+                .accordion-title {
+                  color: #fff;
+                }
+                .accordion-img {
+                  path {
+                    fill: #505050;
+                  }
+                }
+              }
+              .accordion-arrow {
+                transform: rotate(180deg);
+                path {
+                  stroke: #505050;
+                }
+              }
+            }
+          }
+        }
+        .connected-container,
+        .external-container {
+          padding: 0 1.042vw 1.042vw 0;
+          .top-block {
+            box-sizing: border-box;
+            padding: 1.042vw;
+            .accordion-title {
+              color: #ea5f1b;
+              font-family: "Bebas Neue";
+              font-size: 1.146vw;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              transition: 0.25s ease-out color;
+            }
+            .accordion-img {
+              width: 4.271vw;
+              height: auto;
+              position: absolute;
+              top: 0.313vw;
+              right: 0.521vw;
+              path {
+                transition: 0.25s ease-out fill;
+              }
+            }
+            .accordion-arrow {
+              width: 0.729vw;
+              margin: 1.042vw 0 0 0;
+              transition: 0.25s ease-out transform;
+              path {
+                transition: 0.25s ease-out stroke;
+              }
+            }
+            .qr-code {
+              margin: 1.771vw 0 0 0;
+              display: flex;
+              gap: 4.271vw;
+              .qr-container {
+                display: flex;
+                width: 5.729vw;
+                height: 5.729vw;
+                padding: 0.208vw;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                background: #fff;
+                border-radius: 0.313vw;
+                .img-qr {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .accordion-name {
+                @include accordion-name();
+              }
+            }
+            .recipient-address {
+              margin: 1.25vw 0 0 0;
+              display: flex;
+              align-items: center;
+              gap: 1.25vw;
+              .accordion-name {
+                @include accordion-name();
+              }
+              .adress {
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                gap: 0.417vw;
+                padding: 0.26vw 0.469vw;
+                border-radius: 0.313vw;
+                border: 1px solid rgba(234, 95, 27, 0.25);
+                color: #ea5f1b;
+                font-family: "Roboto";
+                font-size: 0.833vw;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                cursor: pointer;
+                transition: 0.25s ease-out background, 0.25s ease-out color;
+                .copy {
+                  width: 0.938vw;
+                  height: auto;
+                  path {
+                    transition: 0.25s ease-out fill;
+                  }
+                }
+                &:hover {
+                  background: #ea5f1b;
+                  color: #fff;
+                  .copy {
+                    path {
+                      fill: #fff;
+                    }
+                  }
+                }
+              }
+            }
+            .mint-price {
+              margin: 1.771vw 0 0 0;
+              display: flex;
+              gap: 3.542vw;
+              .accordion-name {
+                @include accordion-name();
+              }
+              .accordion-meaning {
+                display: flex;
+                @include accordion-meaning();
+                .accordion-sum {
+                  @include accordion-sum();
+                }
+              }
+            }
+            .network-fee {
+              margin: 1.25vw 0 0 0;
+              display: flex;
+              gap: 2.708vw;
+              .accordion-name {
+                @include accordion-name();
+              }
+              .accordion-meaning {
+                @include accordion-meaning();
+                .accordion-sum {
+                  @include accordion-sum();
+                }
+              }
+            }
+          }
+
+          .total-amount {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 0.313vw;
+            box-sizing: border-box;
+            padding: 1.042vw 1.042vw 0.833vw 1.042vw;
+            border-radius: 0vw 0.313vw 0.313vw 0vw;
+            border-top: 1px solid #141313;
+            border-right: 1px solid #141313;
+            border-bottom: 1px solid #141313;
+            .accordion-name {
+              @include accordion-name();
+            }
+            .accordion-quantity {
+              @include accordion-quantity();
+              .currency {
+                font-size: 1.146vw;
+              }
+            }
+            .accordion-sum {
+              position: absolute;
+              right: 1.042vw;
+              bottom: 1.146vw;
+              @include accordion-sum();
+            }
+          }
+          .accordion-button {
+            margin: 1.563vw 0 0 1.042vw;
+            min-width: 9.844vw;
+            @include button();
+          }
+          .bottom-container {
+            display: flex;
+            gap: 1.458vw;
+            .instruction {
+              margin: 1.458vw 0 0 0;
+              width: auto;
+              color: #505050;
+              font-family: "Roboto";
+              font-size: 0.729vw;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 1.042vw;
+            }
+          }
+        }
+      }
     }
   }
 }

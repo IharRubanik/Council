@@ -328,7 +328,7 @@
       }
 
       .footer-text {
-        gap: 21px;
+        gap: 2.051vw;
         .reserved {
           font-size: 1.563vw;
           line-height: 2.441vw;
@@ -579,6 +579,259 @@
       right: -2.148vw;
       bottom: 15.039vw;
       width: 72.266vw;
+    }
+  }
+
+  // payment
+  @mixin accordion-name {
+    font-size: 1.563vw;
+  }
+  @mixin accordion-meaning {
+    font-size: 1.563vw;
+  }
+  @mixin accordion-quantity {
+    font-size: 3.516vw;
+  }
+  @mixin accordion-sum {
+    font-size: 1.563vw;
+  }
+  .payment {
+    height: auto;
+    .payment-title {
+      margin: 10.742vw 0 0 2.93vw;
+      @include h3();
+    }
+    .preview-member {
+      top: 11.23vw;
+      left: 18.945vw;
+      gap: 2.148vw;
+      .img-container {
+        width: 7.617vw;
+        height: 9.18vw;
+      }
+      .right-block {
+        .prewiew-title {
+          font-size: 2.148vw;
+        }
+        .prewiew-subtitle {
+          margin: 0.391vw 0 0 0;
+          font-size: 1.563vw;
+        }
+        .cancel {
+          margin: 1.367vw 0 0 0;
+          gap: 0.781vw;
+          font-size: 1.563vw;
+          line-height: 1.758vw;
+          svg {
+            width: 1.66vw;
+          }
+          span {
+            &::after {
+              height: 1px;
+            }
+          }
+          svg {
+            width: 1.66vw;
+          }
+        }
+      }
+    }
+    .reserved {
+      top: 11.23vw;
+      right: 2.93vw;
+      gap: 0.391vw;
+      .reserved-title {
+        font-size: 1.563vw;
+        margin: 0 1.563vw 0 0;
+      }
+      .minutes,
+      .seconds {
+        width: 3.906vw;
+        height: 3.906vw;
+        border-radius: 0.586vw;
+        border: 1px solid #323232;
+        font-size: 1.758vw;
+      }
+      .colon {
+        font-size: 1.367vw;
+      }
+    }
+    .circl-number {
+      width: 4.883vw;
+      height: 4.883vw;
+      margin: 7.813vw 0 0 2.93vw;
+      span {
+        font-size: 1.953vw;
+      }
+    }
+    .payment-metod {
+      position: static;
+      transform: translateY(-4.395vw);
+      top: auto;
+      margin: 0 0 0 18.945vw;
+      .subtitle {
+        @include mint-subtitle();
+      }
+      .accordion-container {
+        margin: 2.344vw 0 0 0;
+        gap: 1.953vw;
+        flex-direction: column;
+        .connected-wallet {
+          &.open {
+            height: 37.891vw;
+          }
+        }
+        .external-wallet {
+          &.open {
+            height: 58.105vw;
+          }
+        }
+        .connected-wallet,
+        .external-wallet {
+          width: 78.125vw;
+          height: 9.18vw;
+          border-radius: 0.586vw;
+          &:hover{
+            background: #1c1a19;
+            .connected-container,
+            .external-container {
+              .top-block{
+                .accordion-title {
+                  color: #ea5f1b;
+                }
+                .accordion-img {
+                  path {
+                    fill: #505050;
+                  }
+                }
+                .accordion-arrow {
+
+                  path {
+                    stroke: #505050;
+                  }
+                }
+              }
+            }
+            &.closed{
+              background: #1c1a19;
+            }
+          }
+          .connected-container,
+          .external-container {
+            padding: 0 1.953vw 1.953vw 0;
+            .top-block {
+              padding: 1.953vw;
+              .accordion-title {
+                font-size: 2.148vw;
+              }
+              .accordion-img {
+                width: 8.008vw;
+                top: 0.586vw;
+                right: 0.977vw;
+              }
+              .accordion-arrow {
+                width: 1.367vw;
+                margin: 1.953vw 0 0 0;
+              }
+              .qr-code {
+                margin: 3.32vw 0 0 0;
+                gap: 8.008vw;
+                .qr-container {
+                  width: 10.742vw;
+                  height: 10.742vw;
+                  padding: 0.391vw;
+                  border-radius: 0.586vw;
+                  .img-qr {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                .accordion-name {
+                  @include accordion-name();
+                }
+              }
+              .recipient-address {
+                margin: 2.344vw 0 0 0;
+                gap: 2.344vw;
+                .accordion-name {
+                  @include accordion-name();
+                }
+                .adress {
+                  gap: 0.781vw;
+                  padding: 0.488vw 0.879vw;
+                  border-radius: 0.586vw;
+                  border: 1px solid rgba(234, 95, 27, 0.25);
+                  font-size: 1.563vw;
+                  .copy {
+                    width: 1.758vw;
+                  }
+                }
+              }
+              .mint-price {
+                margin: 3.32vw 0 0 0;
+                gap: 6.641vw;
+                .accordion-name {
+                  @include accordion-name();
+                }
+                .accordion-meaning {
+                  @include accordion-meaning();
+                  .accordion-sum {
+                    @include accordion-sum();
+                  }
+                }
+              }
+              .network-fee {
+                margin: 2.344vw 0 0 0;
+                gap: 5.078vw;
+                .accordion-name {
+                  @include accordion-name();
+                }
+                .accordion-meaning {
+                  @include accordion-meaning();
+                  .accordion-sum {
+                    @include accordion-sum();
+                  }
+                }
+              }
+            }
+            .total-amount {
+              gap: 0.586vw;
+              padding: 1.953vw 1.953vw 1.563vw 1.953vw;
+              border-radius: 0vw 0.586vw 0.586vw 0vw;
+              border-top: 1px solid #141313;
+              border-right: 1px solid #141313;
+              border-bottom: 1px solid #141313;
+              .accordion-name {
+                @include accordion-name();
+              }
+              .accordion-quantity {
+                @include accordion-quantity();
+                .currency {
+                  font-size: 2.148vw;
+                }
+              }
+              .accordion-sum {
+                right: 1.953vw;
+                bottom: 2.148vw;
+                @include accordion-sum();
+              }
+            }
+            .accordion-button {
+              margin: 2.93vw 0 0 1.953vw;
+              min-width: 18.457vw;
+              @include button();
+            }
+            .bottom-container {
+              gap: 2.734vw;
+              .instruction {
+                margin: 2.734vw 0 0 0;
+                font-size: 1.367vw;
+                line-height: 1.953vw;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
