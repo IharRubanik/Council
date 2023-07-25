@@ -667,6 +667,56 @@
           }
         }
       }
+      .payment-status {
+        padding: 6.933vw 6.4vw;
+        border-radius: 1.6vw;
+        border: 1px solid #323232;
+        margin: 5.333vw auto 0 auto;
+        gap: 5.867vw;
+        width: 92vw;
+        .status-container {
+          .status-name {
+            width: 32vw;
+            @include accordion-name();
+          }
+          .status-meaning {
+            @include accordion-meaning();
+          }
+        }
+        .transaction-link {
+          .status-meaning {
+            &::after {
+              height: 1px;
+            }
+          }
+        }
+        .status {
+          .status-meaning {
+            padding: 0px 1.6vw;
+            border-radius: 11.803vw;
+            border: 1px solid #fff;
+          }
+          a { 
+            .process-icon {
+              width: 5.333vw;
+              margin: 0 0 0 8px;
+            }
+          }
+        }
+        .service-fee,
+        .total-amount {
+          .status-meaning {
+            .accordion-sum {
+              @include accordion-sum();
+            }
+          }
+        }
+        .date {
+          font-size: 4.267vw;
+          margin: 0 0 0 32vw;
+          width: 43.467vw;
+        }
+      }
     
   }
 }

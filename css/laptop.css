@@ -1916,6 +1916,108 @@ body::-webkit-scrollbar-thumb {
   font-weight: 400;
   line-height: 1.042vw;
 }
+.payment .payment-status {
+  position: relative;
+  box-sizing: border-box;
+  padding: 1.354vw 1.25vw;
+  border-radius: 0.313vw;
+  border: 1px solid #323232;
+  margin: 1.042vw 0 0 18.906vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.146vw;
+  width: 62.188vw;
+}
+.payment .payment-status .status-container {
+  display: flex;
+}
+.payment .payment-status .status-container .status-name {
+  width: 8.594vw;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.payment .payment-status .status-container .status-meaning {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.payment .payment-status .transaction-link .status-meaning {
+  color: #ea5f1b;
+  position: relative;
+  cursor: pointer;
+}
+.payment .payment-status .transaction-link .status-meaning::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #ea5f1b;
+  transition: 0.25s ease-out width;
+}
+.payment .payment-status .transaction-link .status-meaning:hover {
+  cursor: pointer;
+}
+.payment .payment-status .transaction-link .status-meaning:hover::after {
+  width: 100%;
+}
+.payment .payment-status .status {
+  align-items: center;
+}
+.payment .payment-status .status .status-meaning {
+  display: flex;
+  padding: 0px 0.313vw;
+  border-radius: 2.305vw;
+  border: 1px solid #fff;
+}
+.payment .payment-status .status a {
+  outline: 0;
+  transform: translateY(10%);
+}
+.payment .payment-status .status a .process-icon {
+  width: 1.042vw;
+  height: auto;
+  margin: 0 0 0 0.417vw;
+  transition: 0.25s ease-out transform;
+}
+.payment .payment-status .status a .process-icon path {
+  transition: 0.25s ease-out fill;
+}
+.payment .payment-status .status a .process-icon:hover {
+  transform: rotate(-180deg);
+}
+.payment .payment-status .status a .process-icon:hover path {
+  fill: #ea5f1b;
+}
+.payment .payment-status .service-fee .status-meaning .accordion-sum,
+.payment .payment-status .total-amount .status-meaning .accordion-sum {
+  color: #505050;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.payment .payment-status .date {
+  position: absolute;
+  right: 1.25vw;
+  bottom: 1.354vw;
+  color: #505050;
+  text-align: right;
+  font-family: "Roboto";
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 @media only screen and (max-width: 600px) and (min-aspect-ratio: 375/573) {
   body {

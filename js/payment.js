@@ -49,12 +49,18 @@ window.onload = function () {
 
 
 const mediaQuery600 = window.matchMedia("only screen and (max-width: 600px)");
+const mediaQuery860 = window.matchMedia("only screen and (max-width: 860px)");
 
+if(mediaQuery600.matches || mediaQuery860.matches) {
+    document.querySelector('.token').innerHTML = '0xB0D502E9...5f4d'
+}
 
 if (mediaQuery600.matches) {
     document.querySelector('.reserved-title').innerHTML = 'Reserved time:'
     document.querySelector('.adress').children[1].textContent = '0xB0D502E9...5f4d'
 }
+
+
 
     for (let i = 0; i < accordionButton.length; i++) {
       noClick(accordionButton[i]);

@@ -676,4 +676,40 @@
     font-size: 3.733vw;
     line-height: 5.333vw;
   }
+  .payment .payment-status {
+    padding: 6.933vw 6.4vw;
+    border-radius: 1.6vw;
+    border: 1px solid #323232;
+    margin: 5.333vw auto 0 auto;
+    gap: 5.867vw;
+    width: 92vw;
+  }
+  .payment .payment-status .status-container .status-name {
+    width: 32vw;
+    font-size: 4.267vw;
+  }
+  .payment .payment-status .status-container .status-meaning {
+    font-size: 4.267vw;
+  }
+  .payment .payment-status .transaction-link .status-meaning::after {
+    height: 1px;
+  }
+  .payment .payment-status .status .status-meaning {
+    padding: 0px 1.6vw;
+    border-radius: 11.803vw;
+    border: 1px solid #fff;
+  }
+  .payment .payment-status .status a .process-icon {
+    width: 5.333vw;
+    margin: 0 0 0 8px;
+  }
+  .payment .payment-status .service-fee .status-meaning .accordion-sum,
+  .payment .payment-status .total-amount .status-meaning .accordion-sum {
+    font-size: 4.267vw;
+  }
+  .payment .payment-status .date {
+    font-size: 4.267vw;
+    margin: 0 0 0 32vw;
+    width: 43.467vw;
+  }
 }/*# sourceMappingURL=mobile.css.map */
