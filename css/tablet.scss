@@ -596,7 +596,7 @@
     font-size: 1.563vw;
   }
   .payment {
-    height: auto;
+    padding: 0 0 7.813vw 0;
     .payment-title {
       margin: 10.742vw 0 0 2.93vw;
       @include h3();
@@ -656,24 +656,26 @@
         font-size: 1.367vw;
       }
     }
-    .circl-number {
-      width: 4.883vw;
-      height: 4.883vw;
+    .subtitle-container{
       margin: 7.813vw 0 0 2.93vw;
-      span {
-        font-size: 1.953vw;
+      gap: 11.133vw;
+      .circl-number {
+        width: 4.883vw;
+        height: 4.883vw;
+       
+        span {
+          font-size: 1.953vw;
+        }
       }
-    }
-    .payment-metod {
-      position: static;
-      transform: translateY(-4.395vw);
-      top: auto;
-      margin: 0 0 0 18.945vw;
       .subtitle {
         @include mint-subtitle();
       }
+    }
+ 
+
+   
       .accordion-container {
-        margin: 2.344vw 0 0 0;
+        margin: 2.344vw 0 0 18.945vw;
         gap: 1.953vw;
         flex-direction: column;
         .connected-wallet {
@@ -691,11 +693,11 @@
           width: 78.125vw;
           height: 9.18vw;
           border-radius: 0.586vw;
-          &:hover{
+          &:hover {
             background: #1c1a19;
             .connected-container,
             .external-container {
-              .top-block{
+              .top-block {
                 .accordion-title {
                   color: #ea5f1b;
                 }
@@ -705,14 +707,13 @@
                   }
                 }
                 .accordion-arrow {
-
                   path {
                     stroke: #505050;
                   }
                 }
               }
             }
-            &.closed{
+            &.closed {
               background: #1c1a19;
             }
           }
@@ -832,6 +833,6 @@
           }
         }
       }
-    }
+  
   }
 }

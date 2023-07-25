@@ -130,7 +130,6 @@
     }
   }
 }
-
 body {
   background: #141313;
   overflow: overlay;
@@ -1281,8 +1280,9 @@ body {
 }
 .payment {
   position: relative;
-  height: 55.208vw;
+  height: auto;
   overflow: hidden;
+  padding: 0 0 4.167vw 0;
   transition: 0.25s ease-out height;
   .payment-title {
     margin: 6.875vw 0 0 3.125vw;
@@ -1419,37 +1419,39 @@ body {
       line-height: normal;
     }
   }
-  .circl-number {
+
+  .subtitle-container{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 2.865vw;
-    height: 2.865vw;
-    background-image: url(../img/payment/round.svg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    gap: 12.865vw;
     margin: 2.604vw 0 0 3.125vw;
-    transition: 2.5s ease-out opacity;
-    span {
-      color: #ea5f1b;
-      font-family: "Roboto";
-      font-size: 1.042vw;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-transform: uppercase;
+    .circl-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.865vw;
+      height: 2.865vw;
+      background-image: url(../img/payment/round.svg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      transition: 2.5s ease-out opacity;
+      span {
+        color: #ea5f1b;
+        font-family: "Roboto";
+        font-size: 1.042vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
     }
-  }
-  .payment-metod {
-    position: absolute;
-    left: 50%;
-    top: 15.833vw;
-    transform: translateX(-50%);
     .subtitle {
       @include mint-subtitle();
     }
+  }
     .accordion-container {
-      margin: 1.042vw 0 0 0;
+      margin: 1.042vw 0 0 18.906vw;
+      width: 100%;
       * {
         user-select: none;
       }
@@ -1591,6 +1593,7 @@ body {
             }
             .accordion-arrow {
               width: 0.729vw;
+              height: auto;
               margin: 1.042vw 0 0 0;
               transition: 0.25s ease-out transform;
               path {
@@ -1742,7 +1745,7 @@ body {
         }
       }
     }
-  }
+  // }
 }
 
 @media only screen and (max-width: 600px) and (min-aspect-ratio: 375 / 573) {

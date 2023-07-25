@@ -466,7 +466,7 @@
 }
 @media  (min-aspect-ratio: 768 / 900) {
   .mint{
-    height: 1024px !important;
+    height: 133.333vw !important;
   }
 }
 
@@ -534,6 +534,7 @@
       font-size: 2.083vw;
     }
     .payment {
+      padding: 0 0 7.813vw 0;
       .payment-title {
         margin: 14.323vw 0 0 3.906vw;
         @include h3();
@@ -593,21 +594,23 @@
           font-size: 1.823vw;
         }
       }
-      .circl-number {
-        width: 6.51vw;
-        height: 6.51vw;
+      .subtitle-container{
         margin: 22.135vw 0 0 3.906vw;
-        span {
-          font-size: 2.604vw;
+        gap: 6.51vw;
+        .circl-number {
+          width: 6.51vw;
+          height: 6.51vw;
+        
+          span {
+            font-size: 2.604vw;
+          }
         }
-      }
-      .payment-metod {
-        margin: 0 0 0 16.927vw;
         .subtitle {
           @include mint-subtitle();
         }
+      } 
         .accordion-container {
-          margin: 3.125vw 0 0 0;
+          margin: 3.125vw 0 0 16.927vw;
           gap: 2.604vw;
           .connected-wallet {
             &.open {
@@ -647,8 +650,8 @@
                   .qr-container {
                     width: 14.323vw;
                     height: 14.323vw;
-                    padding: 4px;
-                    border-radius: 6px;
+                    padding: 0.521vw;
+                    border-radius: 0.781vw;
                     .img-qr {
                       width: 100%;
                       height: 100%;
@@ -705,7 +708,7 @@
               .total-amount {
                 gap: 0.781vw;
                 padding: 2.604vw 2.604vw 2.083vw 2.604vw;
-                border-radius: 0px 0.781vw 0.781vw 0px;
+                border-radius: 0 0.781vw 0.781vw 0;
                 border-top: 1px solid #141313;
                 border-right: 1px solid #141313;
                 border-bottom: 1px solid #141313;
@@ -740,6 +743,6 @@
             }
           }
         }
-      }
+      
     }
 }
